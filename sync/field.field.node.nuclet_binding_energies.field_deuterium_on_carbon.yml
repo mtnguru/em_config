@@ -1,0 +1,23 @@
+uuid: 9b3e792e-46d8-42a4-ae34-806c0722ddaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deuterium_on_carbon
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_deuterium_on_carbon
+field_name: field_deuterium_on_carbon
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Deuterium on Carbon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

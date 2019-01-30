@@ -1,0 +1,69 @@
+uuid: 25ba2960-70c3-4745-aef0-823d19bdab11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_email
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_comments
+    - field.field.node.glossary.field_links
+    - field.field.node.glossary.field_media
+    - field.field.node.glossary.field_show_author
+    - field.field.node.glossary.field_social_media
+    - field.field.node.glossary.field_tooltip
+    - node.type.glossary
+  module:
+    - link
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.glossary.teaser_email
+targetEntityType: node
+bundle: glossary
+mode: teaser_email
+content:
+  field_links:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: media_medium_w_desc
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_tooltip:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_comments: true
+  field_show_author: true
+  field_social_media: true

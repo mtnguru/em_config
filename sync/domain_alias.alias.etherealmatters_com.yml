@@ -1,0 +1,9 @@
+uuid: 3e4bea48-60df-4fd3-abfe-415b385d14fb
+langcode: en
+status: true
+dependencies: {  }
+id: etherealmatters_com
+domain_id: etherealmatters_org
+pattern: etherealmatters.com
+redirect: 301
+environment: default

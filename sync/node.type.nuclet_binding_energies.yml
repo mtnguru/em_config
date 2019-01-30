@@ -1,0 +1,18 @@
+uuid: 98982790-59cb-4437-8881-172921a61480
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Nuclet Binding Energies'
+type: nuclet_binding_energies
+description: 'Binding energies for the various nuclets and combinations of nuclets.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

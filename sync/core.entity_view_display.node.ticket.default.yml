@@ -1,0 +1,101 @@
+uuid: 40e31648-2eb6-4224-89b7-3716cb164d07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.content_comment.default
+    - field.field.node.ticket.body
+    - field.field.node.ticket.field_assigned_to
+    - field.field.node.ticket.field_comments
+    - field.field.node.ticket.field_group
+    - field.field.node.ticket.field_page
+    - field.field.node.ticket.field_priority
+    - field.field.node.ticket.field_status
+    - field.field.node.ticket.field_type
+    - node.type.ticket
+  module:
+    - comment
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.ticket.default
+targetEntityType: node
+bundle: ticket
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_assigned_to:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_comments:
+    weight: 7
+    label: inline
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_group:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_page:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_priority:
+    weight: 1
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_status:
+    weight: 2
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

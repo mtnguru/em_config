@@ -1,0 +1,25 @@
+uuid: 03c21da9-f323-4113-82d7-4e83b80dd268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_media
+    - node.type.article
+  module:
+    - social_media
+id: node.article.field_social_media
+field_name: field_social_media
+entity_type: node
+bundle: article
+label: 'Share this Article'
+description: 'Display the social media share buttons in the upper right corner.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

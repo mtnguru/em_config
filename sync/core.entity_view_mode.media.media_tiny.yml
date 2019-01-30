@@ -1,0 +1,14 @@
+uuid: bc9b209e-c9ee-4c88-8f4f-25afbc7efe4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.media_tiny
+label: 'Media - Tiny'
+targetEntityType: media
+cache: true

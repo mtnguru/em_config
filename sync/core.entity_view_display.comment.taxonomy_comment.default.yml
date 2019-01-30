@@ -1,0 +1,27 @@
+uuid: 09fc34de-7fb9-4391-84e7-ab7cb66ef42e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.taxonomy_comment
+    - field.field.comment.taxonomy_comment.comment_body
+  module:
+    - text
+id: comment.taxonomy_comment.default
+targetEntityType: comment
+bundle: taxonomy_comment
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

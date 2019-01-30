@@ -1,0 +1,20 @@
+uuid: 8fa6b66c-5c06-4c46-ac31-a0f5a756ca9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field__protons
+field_name: field__protons
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

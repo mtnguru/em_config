@@ -1,0 +1,33 @@
+uuid: d8782917-cfa5-4169-8e8e-a48b3958a155
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.group_members
+  module:
+    - ctools
+    - views
+  theme:
+    - sa_neato
+id: views_block__group_members_group_members
+theme: sa_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'views_block:group_members-group_members'
+settings:
+  id: 'views_block:group_members-group_members'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      theories: theories
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

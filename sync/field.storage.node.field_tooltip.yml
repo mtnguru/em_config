@@ -1,0 +1,19 @@
+uuid: e2bcfa9f-5954-457c-bcc2-3e52e1b8b526
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tooltip
+field_name: field_tooltip
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 356adb72-6d72-4543-af5f-ff23742e4ebd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ticket Status'
+vid: ticket_status
+description: 'Keeps track of progress on a ticket'
+hierarchy: 0
+weight: 0

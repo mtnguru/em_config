@@ -1,0 +1,35 @@
+uuid: e1e5e635-3fed-430c-a78c-5587c7b77fef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: linkit_profile
+label: Content
+description: 'Articles, book pages, topics, atoms, news'
+attributes:
+  title:
+    id: title
+    weight: -10
+    settings:
+      automatic_title: true
+  target:
+    id: target
+    weight: -9
+    settings:
+      widget_type: simple_checkbox
+matchers:
+  663108bf-8616-4fb8-8544-75024e7b8399:
+    uuid: 663108bf-8616-4fb8-8544-75024e7b8399
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        article: article
+        atom: atom
+        book: book
+        glossary: glossary
+        news: news
+      group_by_bundle: false
+      include_unpublished: false

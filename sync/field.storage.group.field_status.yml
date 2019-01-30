@@ -1,0 +1,36 @@
+uuid: 2f844171-0c8c-468f-b26f-5fe80b889d3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_status
+field_name: field_status
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: new
+      label: New
+    -
+      value: active
+      label: Active
+    -
+      value: invisible
+      label: Invisible
+    -
+      value: hidden
+      label: Hidden
+    -
+      value: closed
+      label: Closed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,41 @@
+uuid: 78b16537-8cbd-4893-b770-8944c2cb36b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.announcement
+    - field.field.group.theories.field_announcement
+    - field.field.group.theories.field_directory_book
+    - field.field.group.theories.field_hero_image
+    - field.field.group.theories.field_highlight_color
+    - field.field.group.theories.field_logo_image
+    - field.field.group.theories.field_short_description
+    - field.field.group.theories.field_status
+    - field.field.group.theories.field_weight
+    - group.type.theories
+id: group.theories.announcement
+targetEntityType: group
+bundle: theories
+mode: announcement
+content:
+  field_announcement:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: full_content
+      link: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_directory_book: true
+  field_hero_image: true
+  field_highlight_color: true
+  field_logo_image: true
+  field_short_description: true
+  field_status: true
+  field_weight: true
+  label: true
+  uid: true

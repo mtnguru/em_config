@@ -1,0 +1,21 @@
+uuid: bb750898-022d-4765-a2ad-0666ace18325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_author
+    - media.type.link
+id: media.link.field_author
+field_name: field_author
+entity_type: media
+bundle: link
+label: Author
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

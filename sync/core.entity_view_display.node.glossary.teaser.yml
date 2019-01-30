@@ -1,0 +1,61 @@
+uuid: c9063acb-6fb3-488d-b476-1289345fabed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_comments
+    - field.field.node.glossary.field_links
+    - field.field.node.glossary.field_media
+    - field.field.node.glossary.field_show_author
+    - field.field.node.glossary.field_social_media
+    - field.field.node.glossary.field_tooltip
+    - node.type.glossary
+  module:
+    - link
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.glossary.teaser
+targetEntityType: node
+bundle: glossary
+mode: teaser
+content:
+  field_links:
+    type: link
+    weight: 3
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_tooltip:
+    type: text_default
+    weight: 0
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_comments: true
+  field_media: true
+  field_show_author: true
+  field_social_media: true

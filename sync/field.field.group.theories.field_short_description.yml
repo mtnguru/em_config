@@ -1,0 +1,21 @@
+uuid: dce90243-d119-48fc-87e0-6f7b20cc2584
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_short_description
+    - group.type.theories
+  module:
+    - text
+id: group.theories.field_short_description
+field_name: field_short_description
+entity_type: group
+bundle: theories
+label: 'Short description'
+description: 'A brief description of this group - used for teasers and popups.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

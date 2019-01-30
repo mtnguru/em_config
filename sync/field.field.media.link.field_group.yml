@@ -1,0 +1,28 @@
+uuid: 220315ea-54d1-4a5f-b769-c6717b38a3aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_group
+    - group.type.theories
+    - media.type.link
+id: media.link.field_group
+field_name: field_group
+entity_type: media
+bundle: link
+label: Group
+description: 'Group this resource is associated with.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      theories: theories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

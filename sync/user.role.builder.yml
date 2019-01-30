@@ -1,0 +1,15 @@
+uuid: a475f95a-3595-4aa2-aa36-96853b69d46b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: builder
+label: Builder
+weight: -5
+is_admin: null
+permissions:
+  - 'atomizer display atom builder'

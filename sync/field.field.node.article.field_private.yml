@@ -1,0 +1,23 @@
+uuid: 8efdf2f9-79ba-498a-8f55-ee2bffa629a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private
+    - node.type.article
+id: node.article.field_private
+field_name: field_private
+entity_type: node
+bundle: article
+label: Private
+description: 'Mark content as private to this group - only members can view it'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

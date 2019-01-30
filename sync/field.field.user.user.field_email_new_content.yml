@@ -1,0 +1,23 @@
+uuid: 7eedcfe8-ea5e-40d4-80be-6fe9db2d6b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_email_new_content
+  module:
+    - options
+    - user
+id: user.user.field_email_new_content
+field_name: field_email_new_content
+entity_type: user
+bundle: user
+label: 'New content email notifications'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: immediate
+default_value_callback: ''
+settings: {  }
+field_type: list_string

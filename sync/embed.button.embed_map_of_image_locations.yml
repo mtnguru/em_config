@@ -1,0 +1,26 @@
+uuid: 3cebe18c-c605-4028-b88d-356bf5c7a358
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.book
+  content:
+    - 'file:file:d591f931-a959-4b80-8db2-aaaa0d46576d'
+  module:
+    - entity_embed
+    - node
+label: 'Embed Map of Image locations'
+id: embed_map_of_image_locations
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles:
+    - article
+    - book
+  display_plugins:
+    - 'view_mode:node.image_map'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: d591f931-a959-4b80-8db2-aaaa0d46576d

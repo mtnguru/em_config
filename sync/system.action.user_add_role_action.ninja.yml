@@ -1,0 +1,14 @@
+uuid: e5e92ca8-3048-4af8-9d2e-d837d36eaaa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ninja
+  module:
+    - user
+id: user_add_role_action.ninja
+label: 'Add the Ninja role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ninja

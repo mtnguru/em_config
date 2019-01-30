@@ -1,0 +1,19 @@
+uuid: cf5201f7-bec4-4c58-9388-deab9d7cef26
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+    - node.type.book
+  module:
+    - gnode
+    - node
+id: theories-group_node-book
+label: 'Theories: Group node (Book page)'
+description: 'Adds <em class="placeholder">Book page</em> content to groups both publicly and privately.'
+group_type: theories
+content_plugin: 'group_node:book'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

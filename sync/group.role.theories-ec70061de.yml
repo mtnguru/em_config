@@ -1,0 +1,17 @@
+uuid: 12508fab-2ca3-41c5-bf47-1262473c7c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.contributor
+id: theories-ec70061de
+label: Contributor
+weight: -7
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

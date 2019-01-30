@@ -1,0 +1,65 @@
+uuid: 8f16a7d9-5726-4afe-a479-8d805928a74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media
+  module:
+    - lightning_media
+    - views
+name: media_browser_embed
+label: 'Media browser embed'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '600'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: thumbnail
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  07cf731d-7052-402a-806d-d4e46e0eb738:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 07cf731d-7052-402a-806d-d4e46e0eb738
+    weight: -9
+    label: Library
+    id: view
+  8bcbeed6-197c-436f-93a5-48e166243d66:
+    settings:
+      submit_text: Place
+      form_mode: media_browser
+      return_file: false
+    uuid: 8bcbeed6-197c-436f-93a5-48e166243d66
+    weight: -8
+    label: 'Upload File'
+    id: file_upload
+  cf77ccb8-7b1e-4554-b61e-8f40e5916116:
+    settings:
+      submit_text: Place
+      form_mode: media_browser
+    uuid: cf77ccb8-7b1e-4554-b61e-8f40e5916116
+    weight: -7
+    label: 'YouTube Video'
+    id: embed_code
+  a609994f-de4d-4cf2-94bf-6d1b05750064:
+    settings:
+      view: media
+      view_display: entity_browser_3
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: a609994f-de4d-4cf2-94bf-6d1b05750064
+    weight: -10
+    label: 'My Library'
+    id: view

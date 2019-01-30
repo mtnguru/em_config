@@ -1,0 +1,21 @@
+uuid: dce7953a-cf79-4740-bc3d-8a586198a78e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.taxonomy_comment
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.taxonomy_comment.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: taxonomy_comment
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,212 @@
+uuid: 613e5043-332a-4a30-8481-384388e000a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+    - media.type.image
+    - media.type.instagram
+    - media.type.tweet
+    - media.type.video
+    - node.type.article
+    - node.type.book
+    - node.type.event
+    - node.type.glossary
+    - node.type.news
+    - node.type.snippet
+  module:
+    - content_moderation
+id: 83db3a5d
+label: 'Confidential to Needs Review'
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      published: false
+      default_revision: true
+      weight: -6
+    confidential:
+      published: false
+      default_revision: false
+      label: Confidential
+      weight: 0
+    draft:
+      published: false
+      default_revision: false
+      label: Draft
+      weight: -9
+    needs_review:
+      label: 'Needs Review'
+      published: false
+      default_revision: false
+      weight: -8
+    placeholder:
+      label: Placeholder
+      published: false
+      default_revision: false
+      weight: -10
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: -7
+  transitions:
+    archived_published:
+      label: Un-archive
+      from:
+        - archived
+      to: published
+      weight: -2
+    confi:
+      label: Confidential
+      from:
+        - confidential
+      to: confidential
+      weight: -8
+    confidential_to_draft:
+      label: 'Confidential to Draft'
+      from:
+        - confidential
+      to: draft
+      weight: 10
+    confidential_to_published:
+      label: 'Confidential to Published'
+      from:
+        - confidential
+      to: published
+      weight: 10
+    draft_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+      to: draft
+      weight: -9
+    draft_needs_review:
+      label: 'Request Review'
+      from:
+        - draft
+      to: needs_review
+      weight: -1
+    draft_placeholder:
+      label: 'Draft to Placeholder'
+      from:
+        - draft
+      to: placeholder
+      weight: 0
+    draft_published:
+      label: Publish
+      from:
+        - draft
+      to: published
+      weight: 1
+    draft_to_confidential:
+      label: 'Draft to Confidential'
+      from:
+        - draft
+      to: confidential
+      weight: -5
+    needs_review_draft:
+      label: 'Send Back to Draft'
+      from:
+        - needs_review
+      to: draft
+      weight: 2
+    needs_review_needs_review:
+      label: 'Keep in Review'
+      from:
+        - needs_review
+      to: needs_review
+      weight: -7
+    needs_review_placeholder:
+      label: 'Needs Review to Placeholder'
+      from:
+        - needs_review
+      to: placeholder
+      weight: 3
+    needs_review_published:
+      label: Publish
+      from:
+        - needs_review
+      to: published
+      weight: 4
+    needs_review_to_config:
+      label: 'Needs Review to Confidential'
+      from:
+        - needs_review
+      to: confidential
+      weight: -4
+    placeholder_draft:
+      label: 'Placeholder to Draft'
+      from:
+        - placeholder
+      to: draft
+      weight: 5
+    placeholder_needs_review:
+      label: 'Placeholder to Needs Review'
+      from:
+        - placeholder
+      to: needs_review
+      weight: 6
+    placeholder_placeholder:
+      label: 'Create New Placeholder'
+      from:
+        - placeholder
+      to: placeholder
+      weight: -10
+    placeholder_published:
+      label: 'Placeholder to Published'
+      from:
+        - placeholder
+      to: published
+      weight: 7
+    published_archived:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 8
+    published_draft:
+      label: 'Create New Draft'
+      from:
+        - published
+      to: draft
+      weight: 9
+    published_needs_review:
+      label: 'Published to Needs Review'
+      from:
+        - published
+      to: needs_review
+      weight: 10
+    published_placeholder:
+      label: 'Published to Placeholder'
+      from:
+        - published
+      to: placeholder
+      weight: 10
+    published_published:
+      label: Publish
+      from:
+        - published
+      to: published
+      weight: -6
+    published_to_confidential:
+      label: 'Published to Confidential'
+      from:
+        - published
+      to: confidential
+      weight: -3
+  entity_types:
+    media:
+      - document
+      - image
+      - instagram
+      - tweet
+      - video
+    node:
+      - article
+      - book
+      - event
+      - glossary
+      - news
+      - snippet

@@ -1,0 +1,14 @@
+uuid: e10bb25a-3516-4fe8-a10a-7d37be6c8223
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.announcement
+label: Announcement
+targetEntityType: group
+cache: true

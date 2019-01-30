@@ -1,0 +1,23 @@
+uuid: f9f058cf-9b03-43a8-b047-52db57cee7f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tritium
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_tritium
+field_name: field_tritium
+entity_type: node
+bundle: nuclet_binding_energies
+label: Tritium
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

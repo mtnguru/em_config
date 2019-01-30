@@ -1,0 +1,54 @@
+uuid: 49bf86cd-0d01-4ccf-b161-75a3a142726f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_small_w_desc
+    - field.field.media.video.field_author
+    - field.field.media.video.field_create_date
+    - field.field.media.video.field_description
+    - field.field.media.video.field_media_in_library
+    - field.field.media.video.field_media_video_embed_field
+    - field.field.media.video.field_usage
+    - media.type.video
+  module:
+    - az_components
+    - video_embed_field
+_core:
+  default_config_hash: ULSDSeb1LGUAS40ia_8qngabv0GTcJAaHGl67xDUNsA
+id: media.video.media_small_w_desc
+targetEntityType: media
+bundle: video
+mode: media_small_w_desc
+content:
+  field_description:
+    type: more_slider_formatter
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      height: '80'
+      overlayHeight: '60'
+    third_party_settings: {  }
+  field_media_video_embed_field:
+    type: video_embed_field_video
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_group: true
+  field_media_in_library: true
+  field_usage: true
+  name: true
+  thumbnail: true
+  uid: true

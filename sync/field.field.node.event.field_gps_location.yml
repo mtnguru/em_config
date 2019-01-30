@@ -1,0 +1,21 @@
+uuid: 9ea7e8ac-86a9-48a9-9191-19d88e83ed6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gps_location
+    - node.type.event
+  module:
+    - geofield
+id: node.event.field_gps_location
+field_name: field_gps_location
+entity_type: node
+bundle: event
+label: 'GPS Location'
+description: 'Location of this event'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

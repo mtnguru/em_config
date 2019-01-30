@@ -1,0 +1,21 @@
+uuid: 51edd8b6-e389-4b7a-bc7b-870a00ade951
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - media.type.image
+  module:
+    - text
+id: media.image.field_description
+field_name: field_description
+entity_type: media
+bundle: image
+label: Description
+description: 'Enter a description of this image.  Why did you take it?  What are the significant points?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

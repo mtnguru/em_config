@@ -1,0 +1,21 @@
+uuid: 06d52ade-4d40-4805-a30c-ffd493c3ddf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_body
+    - group.type.theories
+  module:
+    - text
+id: group.theories.field_body
+field_name: field_body
+entity_type: group
+bundle: theories
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

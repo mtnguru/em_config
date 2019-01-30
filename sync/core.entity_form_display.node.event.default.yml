@@ -1,0 +1,129 @@
+uuid: 6c548418-e351-4540-96fc-26380a837a21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_gps_location
+    - field.field.node.event.field_location
+    - field.field.node.event.field_teaser
+    - field.field.node.event.field_website_link
+    - node.type.event
+  module:
+    - content_moderation
+    - datetime_range
+    - geofield_map
+    - link
+    - path
+    - text
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_gps_location:
+    weight: 6
+    settings:
+      map_library: gmap
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: '1'
+      map_dimensions:
+        width: 100%
+        height: 450px
+      zoom:
+        start: '6'
+        focus: '12'
+        min: '1'
+        max: '22'
+      geoaddress_field:
+        field: field_location
+        hidden: 0
+        disabled: 0
+      html5_geolocation: '1'
+      map_google_api_key: AIzaSyAB6XWO2xMV-TglVgvDc9vFJkt9Dg8Qp2k
+      click_to_find_marker: 0
+      click_to_place_marker: 0
+      zoom_level: 5
+    third_party_settings: {  }
+    type: geofield_map
+    region: content
+  field_location:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_teaser:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_website_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 10
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  status: true
+  sticky: true

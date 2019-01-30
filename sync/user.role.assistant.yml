@@ -1,0 +1,56 @@
+uuid: ae8ce35a-0810-41fe-864f-f073835d61d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: assistant
+label: Assistant
+weight: -6
+is_admin: null
+permissions:
+  - 'administer menu'
+  - 'atomizer embed atoms'
+  - 'az content view tickets'
+  - 'create book content'
+  - 'delete book revisions'
+  - 'delete own book content'
+  - 'delete own ticket content'
+  - 'edit any book content'
+  - 'edit any ticket content'
+  - 'edit own book content'
+  - 'edit own email content'
+  - 'revert book revisions'
+  - 'revert ticket revisions'
+  - 'show unpublished book pages'
+  - 'use 83db3a5d transition archived_published'
+  - 'use 83db3a5d transition confi'
+  - 'use 83db3a5d transition confidential_to_draft'
+  - 'use 83db3a5d transition confidential_to_published'
+  - 'use 83db3a5d transition draft_draft'
+  - 'use 83db3a5d transition draft_needs_review'
+  - 'use 83db3a5d transition draft_placeholder'
+  - 'use 83db3a5d transition draft_published'
+  - 'use 83db3a5d transition draft_to_confidential'
+  - 'use 83db3a5d transition needs_review_draft'
+  - 'use 83db3a5d transition needs_review_needs_review'
+  - 'use 83db3a5d transition needs_review_placeholder'
+  - 'use 83db3a5d transition needs_review_published'
+  - 'use 83db3a5d transition needs_review_to_config'
+  - 'use 83db3a5d transition placeholder_draft'
+  - 'use 83db3a5d transition placeholder_needs_review'
+  - 'use 83db3a5d transition placeholder_placeholder'
+  - 'use 83db3a5d transition placeholder_published'
+  - 'use 83db3a5d transition published_archived'
+  - 'use 83db3a5d transition published_draft'
+  - 'use 83db3a5d transition published_needs_review'
+  - 'use 83db3a5d transition published_placeholder'
+  - 'use 83db3a5d transition published_published'
+  - 'use 83db3a5d transition published_to_confidential'
+  - 'view any unpublished content'
+  - 'view book revisions'
+  - 'view latest version'
+  - 'view ticket revisions'

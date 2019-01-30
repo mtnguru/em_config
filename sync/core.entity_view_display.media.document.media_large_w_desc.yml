@@ -1,0 +1,88 @@
+uuid: a9c9d2a3-46fd-4125-a269-1074c8638065
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_large_w_desc
+    - field.field.media.document.field_author
+    - field.field.media.document.field_create_date
+    - field.field.media.document.field_description
+    - field.field.media.document.field_document
+    - field.field.media.document.field_media_in_library
+    - field.field.media.document.field_usage
+    - image.style.medium
+    - media.type.document
+  module:
+    - datetime
+    - file
+    - image
+    - text
+_core:
+  default_config_hash: 4tgcXj_iKv9Fw3xmONUfCHKqO7OeOa11qVesruN4k4k
+id: media.document.media_large_w_desc
+targetEntityType: media
+bundle: document
+mode: media_large_w_desc
+content:
+  field_author:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_create_date:
+    weight: 2
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_document:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_usage:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  thumbnail:
+    type: image
+    weight: 3
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  created: true
+  field_group: true
+  field_media_in_library: true
+  uid: true

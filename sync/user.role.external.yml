@@ -1,0 +1,14 @@
+uuid: 6d729b87-e546-4d4a-b2f0-1f3d281aeb71
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'External person - they aren''t actually a member, may be deceased, or may not even be a person - i.e. wikipedia'
+id: external
+label: External
+weight: -8
+is_admin: null
+permissions: {  }

@@ -1,0 +1,15 @@
+uuid: dacea6ad-79e4-4f05-b6f5-662158273011
+langcode: en
+status: true
+dependencies: {  }
+name: 70x70
+label: 70x70
+effects:
+  5738fbec-0fb6-437b-930e-519a7d72027c:
+    uuid: 5738fbec-0fb6-437b-930e-519a7d72027c
+    id: image_scale
+    weight: 1
+    data:
+      width: 70
+      height: 70
+      upscale: false

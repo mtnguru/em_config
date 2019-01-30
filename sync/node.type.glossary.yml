@@ -1,0 +1,17 @@
+uuid: b6942b48-5328-45f3-a223-192aa15dea9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Topic
+type: glossary
+description: 'Words or terms which are referred to in articles - used for finding related content.  Used to create a glossary of terms.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

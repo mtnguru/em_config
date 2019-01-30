@@ -1,0 +1,14 @@
+uuid: 83949894-c253-46ff-ab4d-a1245f978ada
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.members
+label: Members
+targetEntityType: group
+cache: true

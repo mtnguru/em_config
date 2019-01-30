@@ -1,0 +1,23 @@
+uuid: 5e9a8de0-7296-4d7c-8bac-545968cc8b02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isotope
+    - node.type.atom
+id: node.atom.field_isotope
+field_name: field_isotope
+entity_type: node
+bundle: atom
+label: Isotope
+description: 'Isotope number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -50
+  max: 50
+  prefix: ''
+  suffix: ''
+field_type: integer

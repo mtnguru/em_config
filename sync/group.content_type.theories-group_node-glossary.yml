@@ -1,0 +1,19 @@
+uuid: 2b31a707-a948-4ab7-a09d-3830b43da630
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+    - node.type.glossary
+  module:
+    - gnode
+    - node
+id: theories-group_node-glossary
+label: 'Theories: Group node (Glossary Term)'
+description: 'Adds <em class="placeholder">Glossary Term</em> content to groups both publicly and privately.'
+group_type: theories
+content_plugin: 'group_node:glossary'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

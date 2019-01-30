@@ -1,0 +1,21 @@
+uuid: 78b908d4-d72b-4133-b7cb-ea7be2a2a94c
+langcode: en
+status: false
+dependencies:
+  module:
+    - az_content
+  theme:
+    - em_neato
+id: em_neato_azdonateblock
+theme: em_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: az_donate_block
+settings:
+  id: az_donate_block
+  label: 'Help Us Make the Next Step Forward'
+  provider: az_content
+  label_display: visible
+  nid: '328'
+visibility: {  }

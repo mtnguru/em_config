@@ -1,0 +1,21 @@
+uuid: 55ef428f-4399-4469-864f-de7fa689b684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_create_date
+    - media.type.image
+  module:
+    - datetime
+id: media.image.field_create_date
+field_name: field_create_date
+entity_type: media
+bundle: image
+label: 'Create date'
+description: 'If left blank the program will attempt to extract the date from the image.  If the date cannot be extracted then it is set to the current date - [current-date:html_date]'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

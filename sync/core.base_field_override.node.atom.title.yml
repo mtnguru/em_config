@@ -1,0 +1,18 @@
+uuid: 2b0b593b-e043-4b5f-b059-45160989a2c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atom
+id: node.atom.title
+field_name: title
+entity_type: node
+bundle: atom
+label: 'Atom name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

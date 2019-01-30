@@ -1,0 +1,23 @@
+uuid: aa1c63e0-1e80-48e7-ab2a-f77e24674e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_approval
+    - node.type.atom
+  module:
+    - options
+id: node.atom.field_approval
+field_name: field_approval
+entity_type: node
+bundle: atom
+label: Approval
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: everyone
+default_value_callback: ''
+settings: {  }
+field_type: list_string

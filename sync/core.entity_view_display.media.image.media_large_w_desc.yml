@@ -1,0 +1,64 @@
+uuid: d1549481-92d7-4198-a423-4d5316524b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_large_w_desc
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - image.style.1520x1140
+    - media.type.image
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.media_large_w_desc
+targetEntityType: media
+bundle: image
+mode: media_large_w_desc
+content:
+  field_description:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 1520x1140
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_dimensions: true
+  field_geofield: true
+  field_group: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  thumbnail: true
+  uid: true

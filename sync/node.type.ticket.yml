@@ -1,0 +1,17 @@
+uuid: 9f454bfe-e1e5-458f-8b02-e8d8f8f8fedb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Ticket
+type: ticket
+description: 'Used to track issues, ideas, status of projects, etc.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,25 @@
+uuid: acb224de-c89b-4672-b7d4-e915558d4982
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_highlight_color
+    - group.type.theories
+  module:
+    - color_field
+id: group.theories.field_highlight_color
+field_name: field_highlight_color
+entity_type: group
+bundle: theories
+label: 'Highlight Color'
+description: 'Color that identifies this group.  Used as background color in group label.'
+required: false
+translatable: false
+default_value:
+  -
+    color: '#ff00ff'
+    opacity: '1'
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

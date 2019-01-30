@@ -1,0 +1,21 @@
+uuid: a6862304-33fd-4b47-b4c3-5b826988232a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tooltip
+    - node.type.glossary
+  module:
+    - text
+id: node.glossary.field_tooltip
+field_name: field_tooltip
+entity_type: node
+bundle: glossary
+label: Tooltip
+description: 'Displays when user hovers over a term.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

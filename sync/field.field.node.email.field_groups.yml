@@ -1,0 +1,28 @@
+uuid: 6824d07b-eb3c-42d1-ba21-d3a907da157f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_groups
+    - group.type.theories
+    - node.type.email
+id: node.email.field_groups
+field_name: field_groups
+entity_type: node
+bundle: email
+label: Groups
+description: 'Limit email to members of these groups.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      theories: theories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

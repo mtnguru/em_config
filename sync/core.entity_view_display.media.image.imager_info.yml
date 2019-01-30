@@ -1,0 +1,109 @@
+uuid: 9bdbef21-dcea-4113-ba29-c8a3d90ec81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.imager_info
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - image.style.960x720
+    - media.type.image
+  module:
+    - datetime
+    - geofield
+    - image
+    - text
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.imager_info
+targetEntityType: media
+bundle: image
+mode: imager_info
+content:
+  field_author:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_create_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dimensions:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geofield:
+    weight: 8
+    label: hidden
+    settings:
+      output_format: wkt
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_location:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_usage:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 960x720
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  field_group: true
+  field_media_in_library: true
+  thumbnail: true
+  uid: true

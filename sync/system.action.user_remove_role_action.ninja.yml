@@ -1,0 +1,14 @@
+uuid: 3093d07c-d512-4433-b9db-9d59baf6e662
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ninja
+  module:
+    - user
+id: user_remove_role_action.ninja
+label: 'Remove the Ninja role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ninja

@@ -1,0 +1,23 @@
+uuid: 6fbc8c1f-0b71-44d9-86d6-bcf744c5fb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private
+    - node.type.book
+id: node.book.field_private
+field_name: field_private
+entity_type: node
+bundle: book
+label: Private
+description: 'Mark this page as private - only members in the group can read it.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

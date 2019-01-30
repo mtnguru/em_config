@@ -1,0 +1,23 @@
+uuid: 716ff343-20c6-41db-9d11-2b29e110e191
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_link
+    - media.type.link
+  module:
+    - link
+id: media.link.field_link
+field_name: field_link
+entity_type: media
+bundle: link
+label: Link
+description: 'Link to the page or document on the internet'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

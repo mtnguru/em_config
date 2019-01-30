@@ -1,0 +1,30 @@
+uuid: e060407c-e52d-45e4-bef2-201e42324e0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.image
+    - media.type.video
+    - node.type.glossary
+id: node.glossary.field_media
+field_name: field_media
+entity_type: node
+bundle: glossary
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

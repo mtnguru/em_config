@@ -1,0 +1,23 @@
+uuid: 20183e61-13e4-4130-a841-e4ec7f919853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roles
+    - node.type.email
+id: node.email.field_roles
+field_name: field_roles
+entity_type: node
+bundle: email
+label: Roles
+description: 'Send mail to users with the selected roles.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

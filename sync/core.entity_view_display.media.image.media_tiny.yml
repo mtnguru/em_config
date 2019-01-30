@@ -1,0 +1,50 @@
+uuid: b28b1845-eaf2-4326-9d87-0217cdf2c61d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_tiny
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - image.style.medium
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.media_tiny
+targetEntityType: media
+bundle: image
+mode: media_tiny
+content:
+  image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_description: true
+  field_dimensions: true
+  field_geofield: true
+  field_group: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  name: true
+  thumbnail: true
+  uid: true

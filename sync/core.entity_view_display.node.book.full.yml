@@ -1,0 +1,88 @@
+uuid: 8466196e-5849-49dc-b9e9-3bebb84887c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.content_comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.book.body
+    - field.field.node.book.field_comments
+    - field.field.node.book.field_contribute
+    - field.field.node.book.field_display_image_map
+    - field.field.node.book.field_media
+    - field.field.node.book.field_prefix_title_with_parent_p
+    - field.field.node.book.field_show_author
+    - field.field.node.book.field_social_media
+    - field.field.node.book.field_topics
+    - node.type.book
+  module:
+    - comment
+    - panelizer
+    - social_media
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: UWTnZUj-u-jp8I_S1C1nUCTlM5iIV2QKdxm37ehFjoI
+id: node.book.full
+targetEntityType: node
+bundle: book
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 4
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+  field_media:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: media_large_w_desc
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_social_media:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_default
+    region: content
+  field_topics:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_contribute: true
+  field_display_image_map: true
+  field_prefix_title_with_parent_p: true
+  field_show_author: true
+  workbench_moderation_control: true

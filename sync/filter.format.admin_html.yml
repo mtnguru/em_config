@@ -1,0 +1,43 @@
+uuid: e582cc7b-dd50-4868-a08a-7b2c6104c46e
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_wysiwyg
+    - entity_embed
+name: 'Admin HTML'
+format: admin_html
+weight: -9
+filters:
+  filter_az_wysiwyg:
+    id: filter_az_wysiwyg
+    provider: az_wysiwyg
+    status: true
+    weight: 0
+    settings:
+      footnote_collapse: '0'
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

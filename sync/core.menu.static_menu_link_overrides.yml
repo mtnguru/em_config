@@ -1,0 +1,21 @@
+definitions:
+  user__page:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -10
+  entity__node_type__collection:
+    menu_name: admin
+    parent: system.admin_structure
+    weight: 0
+    expanded: true
+    enabled: true
+  entity__user__collection:
+    menu_name: admin
+    parent: system.admin
+    weight: 4
+    expanded: true
+    enabled: true
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

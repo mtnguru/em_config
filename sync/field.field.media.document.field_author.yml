@@ -1,0 +1,28 @@
+uuid: 478ab55d-63d5-47b1-86b5-932602aba63f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_author
+    - media.type.document
+id: media.document.field_author
+field_name: field_author
+entity_type: media
+bundle: document
+label: Author
+description: 'The person who created this document'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

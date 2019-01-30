@@ -1,0 +1,30 @@
+uuid: d5794b07-117d-4044-9b9c-4c91df87a733
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.content_comment
+    - core.entity_view_mode.comment.teaser_user
+    - field.field.comment.content_comment.comment_body
+  module:
+    - az_components
+id: comment.content_comment.teaser_user
+targetEntityType: comment
+bundle: content_comment
+mode: teaser_user
+content:
+  comment_body:
+    label: hidden
+    type: more_slider_formatter
+    weight: 0
+    settings:
+      height: '80'
+      overlayHeight: '60'
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

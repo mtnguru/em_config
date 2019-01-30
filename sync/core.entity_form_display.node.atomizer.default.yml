@@ -1,0 +1,59 @@
+uuid: 5f5b4e9e-d6de-4ad3-bcab-f64780e78bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.atomizer.body
+    - field.field.node.atomizer.field_configuration_file
+    - node.type.atomizer
+  module:
+    - path
+    - text
+id: node.atomizer.default
+targetEntityType: node
+bundle: atomizer
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_configuration_file:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

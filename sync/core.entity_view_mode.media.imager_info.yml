@@ -1,0 +1,14 @@
+uuid: 2ca7fc34-b084-4ccb-ae33-a188f609a3a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'View mode used in the Imager information popup.'
+id: media.imager_info
+label: 'Imager Info'
+targetEntityType: media
+cache: true

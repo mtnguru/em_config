@@ -1,0 +1,79 @@
+uuid: 25e0498f-5b0f-4a2a-a43f-36112e037af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_attribution
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_group
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - media.type.image
+  module:
+    - imager
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_attribution:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dimensions:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_group:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  image:
+    type: imager_formatter
+    weight: 1
+    label: hidden
+    settings:
+      imager_style: 960x720
+      imager_mode: popup
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_description: true
+  field_geofield: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: 90294c3d-4d17-4529-ad1d-73392cfc05d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.atomizer_minimal
+label: 'Atomizer Minimal'
+targetEntityType: node
+cache: true

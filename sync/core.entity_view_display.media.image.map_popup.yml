@@ -1,0 +1,56 @@
+uuid: ea163097-661f-4917-b75b-6ff4fdca120f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.map_popup
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - media.type.image
+  module:
+    - imager
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.map_popup
+targetEntityType: media
+bundle: image
+mode: map_popup
+content:
+  image:
+    type: imager_formatter
+    weight: 1
+    label: hidden
+    settings:
+      imager_style: thumbnail
+      imager_mode: popup
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_description: true
+  field_dimensions: true
+  field_geofield: true
+  field_group: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  thumbnail: true
+  uid: true

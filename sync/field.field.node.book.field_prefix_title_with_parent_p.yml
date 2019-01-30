@@ -1,0 +1,23 @@
+uuid: 60a680cd-0b26-4a4c-8a6c-16f7be1e4dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prefix_title_with_parent_p
+    - node.type.book
+id: node.book.field_prefix_title_with_parent_p
+field_name: field_prefix_title_with_parent_p
+entity_type: node
+bundle: book
+label: 'Prefix title with parent page title.'
+description: 'If this page is part of a book, then prefix the title with the parent page title.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

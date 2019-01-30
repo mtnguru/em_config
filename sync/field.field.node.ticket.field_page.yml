@@ -1,0 +1,49 @@
+uuid: 639e1c6d-1401-43ab-8bcf-e3d0a1b69fad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page
+    - node.type.article
+    - node.type.atom
+    - node.type.atomizer
+    - node.type.book
+    - node.type.element
+    - node.type.email
+    - node.type.event
+    - node.type.landing_page
+    - node.type.news
+    - node.type.page
+    - node.type.snippet
+    - node.type.ticket
+id: node.ticket.field_page
+field_name: field_page
+entity_type: node
+bundle: ticket
+label: Page
+description: 'The page where this ticket was started from.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      atom: atom
+      atomizer: atomizer
+      page: page
+      book: book
+      element: element
+      email: email
+      event: event
+      landing_page: landing_page
+      news: news
+      snippet: snippet
+      ticket: ticket
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

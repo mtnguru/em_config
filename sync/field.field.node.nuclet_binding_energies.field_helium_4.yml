@@ -1,0 +1,23 @@
+uuid: b63d0ab0-bd84-46b3-ad3f-6b3e15e6ceb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_helium_4
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_helium_4
+field_name: field_helium_4
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Helium 4'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

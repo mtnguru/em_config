@@ -1,0 +1,51 @@
+uuid: a6d9e05d-0f8f-4da8-9d9f-ac6c9c5262a8
+langcode: en
+status: false
+dependencies:
+  module:
+    - atomizer
+  theme:
+    - sa_neato
+id: atom_builder
+theme: sa_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: atomizer_block
+settings:
+  id: atomizer_block
+  label: 'Atomizer block - controls and viewer in one block'
+  provider: atomizer
+  label_display: '0'
+  atomizer_id: Atomizer
+  control_file: controls_atom_viewer.yml
+  atomizer_file: atom_viewer.yml
+  atomizer_configuration:
+    name: 'Atom Builder'
+    defaultView: builder
+    themeDirectory: config/themes/atom_viewer
+    animateDirectory: config/animations/atom_viewer
+    controlFile: controls_atom_builder.yml
+    atomizerId: atom-builder
+    classes:
+      - az-float-controls
+    libraries:
+      - atomizer/atomizer-obfuscator
+      - atomizer/atomizer-atom-builder-obfuscator
+    librariesDev:
+      - atomizer/atomizer-base
+      - atomizer/atomizer-atom-builder
+    bindingEnergies: 732
+    objects:
+      - nuclets
+    select: select_atom
+    canvasRatio: window
+    renderer: webgl
+    views:
+      builder:
+        name: 'Atom Builder'
+        producer: atom_builder
+        defaultAtom: carbon.yml
+        defaultTheme: electrons1
+    filename: atomizer_atom_builder.yml
+visibility: {  }

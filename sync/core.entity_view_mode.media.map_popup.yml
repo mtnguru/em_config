@@ -1,0 +1,14 @@
+uuid: 9e94ca16-4399-4a19-8b95-2da62d10bf10
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.map_popup
+label: 'Map popup'
+targetEntityType: media
+cache: true

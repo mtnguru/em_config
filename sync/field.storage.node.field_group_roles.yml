@@ -1,0 +1,20 @@
+uuid: 4f61d9aa-99c4-46f1-b7ef-f8651bb83b50
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - node
+id: node.field_group_roles
+field_name: field_group_roles
+entity_type: node
+type: entity_reference
+settings:
+  target_type: group_role
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

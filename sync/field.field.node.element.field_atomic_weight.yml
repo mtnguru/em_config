@@ -1,0 +1,23 @@
+uuid: 81003f6e-8d74-48c1-97ce-2bf1cc1fef12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_atomic_weight
+    - node.type.element
+id: node.element.field_atomic_weight
+field_name: field_atomic_weight
+entity_type: node
+bundle: element
+label: 'Atomic Weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 500
+  prefix: ''
+  suffix: ''
+field_type: float

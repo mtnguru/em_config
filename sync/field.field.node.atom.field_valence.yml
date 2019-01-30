@@ -1,0 +1,23 @@
+uuid: cc1162f9-f8c9-4784-92d3-fdabfd07a99f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_valence
+    - node.type.atom
+id: node.atom.field_valence
+field_name: field_valence
+entity_type: node
+bundle: atom
+label: Valence
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

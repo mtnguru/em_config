@@ -1,0 +1,17 @@
+uuid: 834efff3-75f9-4067-bd14-11728208f01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.administrator
+id: theories-a416e6833
+label: Administrator
+weight: -4
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

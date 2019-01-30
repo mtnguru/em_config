@@ -1,0 +1,40 @@
+uuid: 51fe3a71-db3b-40ee-9690-dfc83ccac13a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_usage
+    - media.type.video
+    - node.type.article
+    - node.type.book
+    - node.type.event
+    - node.type.glossary
+    - node.type.news
+    - node.type.page
+    - node.type.snippet
+id: media.video.field_usage
+field_name: field_usage
+entity_type: media
+bundle: video
+label: 'Found In'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      page: page
+      book: book
+      event: event
+      news: news
+      snippet: snippet
+      glossary: glossary
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 03439351-574d-4933-a38a-9c20ed515a16
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.contribute
+label: Contribute
+targetEntityType: node
+cache: true

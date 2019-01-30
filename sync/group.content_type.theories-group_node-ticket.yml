@@ -1,0 +1,19 @@
+uuid: 9c3ef956-e017-4e50-85be-c16eb9d9e3b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+    - node.type.ticket
+  module:
+    - gnode
+    - node
+id: theories-group_node-ticket
+label: 'Theories: Group node (Ticket)'
+description: 'Adds <em class="placeholder">Ticket</em> content to groups both publicly and privately.'
+group_type: theories
+content_plugin: 'group_node:ticket'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

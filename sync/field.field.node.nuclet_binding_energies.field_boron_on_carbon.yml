@@ -1,0 +1,23 @@
+uuid: b3fb0d5e-49c0-45e0-88d5-8af77c410c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boron_on_carbon
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_boron_on_carbon
+field_name: field_boron_on_carbon
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Boron on Carbon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

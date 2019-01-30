@@ -1,0 +1,23 @@
+uuid: 990bb75f-2c34-460e-8b6d-89b896940d35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__inner_electrons
+    - node.type.atom
+id: node.atom.field__inner_electrons
+field_name: field__inner_electrons
+entity_type: node
+bundle: atom
+label: '# Inner electrons'
+description: 'Number of electrons within the nucleus - equivalent to the conventional count of neutrons.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 400
+  prefix: ''
+  suffix: ''
+field_type: integer

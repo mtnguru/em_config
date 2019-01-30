@@ -1,0 +1,23 @@
+uuid: 8170b68e-cc63-470a-9ca4-9fea858c19b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deuterium
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_deuterium
+field_name: field_deuterium
+entity_type: node
+bundle: nuclet_binding_energies
+label: Deuterium
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

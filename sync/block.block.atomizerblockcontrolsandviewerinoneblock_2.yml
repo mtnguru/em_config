@@ -1,0 +1,23 @@
+uuid: de026397-4d21-4e23-8b98-62e48ce3392c
+langcode: en
+status: false
+dependencies:
+  module:
+    - atomizer
+  theme:
+    - sa_neato
+id: atomizerblockcontrolsandviewerinoneblock_2
+theme: sa_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: atomizer_block
+settings:
+  id: atomizer_block
+  label: 'Platonic Solids'
+  provider: atomizer
+  label_display: visible
+  atomizer_id: 'Platonic Solids'
+  control_file: controls_platonic_solids.yml
+  atomizer_file: atomizer_platonic_solids.yml
+visibility: {  }

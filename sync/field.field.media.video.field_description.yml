@@ -1,0 +1,21 @@
+uuid: 28854176-3b40-428e-9356-6f6a4e91e5bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - media.type.video
+  module:
+    - text
+id: media.video.field_description
+field_name: field_description
+entity_type: media
+bundle: video
+label: Description
+description: 'Enter a brief description of the content in this video. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

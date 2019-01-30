@@ -1,0 +1,14 @@
+uuid: 98e1b197-86b3-4eb9-9548-fb1be64ada0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-reviewer
+label: Reviewer
+weight: 102
+internal: false
+audience: member
+group_type: theories
+permissions_ui: true
+permissions: {  }

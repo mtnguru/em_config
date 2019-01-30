@@ -1,0 +1,22 @@
+uuid: 90df402c-af55-44b8-bbe6-94381e3d2457
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: glossary_content_type
+label: 'Glossary Content Type'
+type: 'canonical_entities:node'
+pattern: '/topic/[node:title]'
+selection_criteria:
+  cf41ae09-f73c-44e7-9d5e-6a95e7ebe3e8:
+    id: node_type
+    bundles:
+      glossary: glossary
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cf41ae09-f73c-44e7-9d5e-6a95e7ebe3e8
+selection_logic: and
+weight: -9
+relationships: {  }

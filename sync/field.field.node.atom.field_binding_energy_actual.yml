@@ -1,0 +1,23 @@
+uuid: e157a5dd-a734-430e-8f29-d0dcda797d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_binding_energy_actual
+    - node.type.atom
+id: node.atom.field_binding_energy_actual
+field_name: field_binding_energy_actual
+entity_type: node
+bundle: atom
+label: 'BE - Actual'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

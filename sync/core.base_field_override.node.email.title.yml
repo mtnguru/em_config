@@ -1,0 +1,18 @@
+uuid: 15296021-92db-4a2e-a02c-298d82830641
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.email
+id: node.email.title
+field_name: title
+entity_type: node
+bundle: email
+label: Subject
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,91 @@
+uuid: 33e8ffb5-3a0a-4e99-95e3-83cfc8a98e89
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.atomizer
+    - field.field.node.atom.body
+    - field.field.node.atom.field__inner_electrons
+    - field.field.node.atom.field__outer_electrons
+    - field.field.node.atom.field__protons
+    - field.field.node.atom.field_abundance
+    - field.field.node.atom.field_approval
+    - field.field.node.atom.field_atomic_structure
+    - field.field.node.atom.field_be_accuracy
+    - field.field.node.atom.field_be_actual
+    - field.field.node.atom.field_be_nucleon
+    - field.field.node.atom.field_be_sam
+    - field.field.node.atom.field_element
+    - field.field.node.atom.field_half_life
+    - field.field.node.atom.field_isotope
+    - field.field.node.atom.field_media
+    - field.field.node.atom.field_notes
+    - field.field.node.atom.field_nuclear_spin
+    - field.field.node.atom.field_stability
+    - field.field.node.atom.field_valence
+    - node.type.atom
+  module:
+    - atomizer
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.atom.atomizer
+targetEntityType: node
+bundle: atom
+mode: atomizer
+content:
+  field__inner_electrons:
+    type: number_integer
+    weight: 17
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_atomic_structure:
+    weight: 0
+    label: hidden
+    settings:
+      atomizer: atom_viewer.yml
+      control: controls_atom_minimal.yml
+      atomizerClass: ''
+    third_party_settings: {  }
+    type: atomizer_formatter
+    region: content
+  field_be_sam:
+    type: number_decimal
+    weight: 12
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+hidden:
+  body: true
+  field__outer_electrons: true
+  field__protons: true
+  field_abundance: true
+  field_approval: true
+  field_be_accuracy: true
+  field_be_actual: true
+  field_be_nucleon: true
+  field_binding_energy_actual: true
+  field_binding_energy_calculated: true
+  field_element: true
+  field_half_life: true
+  field_isotope: true
+  field_media: true
+  field_notes: true
+  field_nuclear_spin: true
+  field_stability: true
+  field_valence: true
+  links: true

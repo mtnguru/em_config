@@ -1,0 +1,23 @@
+uuid: 00ffafb8-f945-4774-8907-3f138d36ba6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_be_sam
+    - node.type.atom
+id: node.atom.field_be_sam
+field_name: field_be_sam
+entity_type: node
+bundle: atom
+label: 'BE - SAM'
+description: 'Binding energy as calculated by SAM.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' MeV '
+field_type: float

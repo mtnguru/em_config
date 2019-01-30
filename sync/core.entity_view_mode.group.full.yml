@@ -1,0 +1,14 @@
+uuid: 25cbffa4-2585-4283-b6dd-af02af6e6f9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.full
+label: Full
+targetEntityType: group
+cache: true

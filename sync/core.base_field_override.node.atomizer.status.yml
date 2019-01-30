@@ -1,0 +1,22 @@
+uuid: 178cc252-da20-428a-924e-2825809fde40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atomizer
+id: node.atomizer.status
+field_name: status
+entity_type: node
+bundle: atomizer
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,17 @@
+uuid: aa5859e2-b2bd-4583-9066-16a32c369be4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Snippet
+type: snippet
+description: 'A short piece of HTML used for various error messages, blocks, no content messages, sales pitches, etc.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

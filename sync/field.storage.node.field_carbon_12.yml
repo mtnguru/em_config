@@ -1,0 +1,18 @@
+uuid: 71c33030-b54a-4b1b-bb8a-e1586c550a84
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_carbon_12
+field_name: field_carbon_12
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

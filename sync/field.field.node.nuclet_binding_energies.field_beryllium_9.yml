@@ -1,0 +1,23 @@
+uuid: 2bd5519f-b191-4f04-b891-6a40aa561717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_beryllium_9
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_beryllium_9
+field_name: field_beryllium_9
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Beryllium 9'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

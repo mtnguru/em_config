@@ -1,0 +1,23 @@
+uuid: a05e8107-9568-4d44-a96a-4c347408cd65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_be_accuracy
+    - node.type.atom
+id: node.atom.field_be_accuracy
+field_name: field_be_accuracy
+entity_type: node
+bundle: atom
+label: 'BE - Accuracy'
+description: 'Percentage difference between the SAM calculated binding energy and the actual binding energy.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' %'
+field_type: float

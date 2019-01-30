@@ -1,0 +1,46 @@
+uuid: 2dad18ed-d595-4878-8cc9-17fb2537f241
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.atomizer.body
+    - field.field.node.atomizer.field_configuration_file
+    - node.type.atomizer
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.atomizer.teaser
+targetEntityType: node
+bundle: atomizer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 320
+    third_party_settings: {  }
+    region: content
+  field_configuration_file:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

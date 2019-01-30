@@ -1,0 +1,21 @@
+uuid: b78c6f02-5580-4a32-905d-8ddd55d6a7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contribute
+    - node.type.news
+  module:
+    - text
+id: node.news.field_contribute
+field_name: field_contribute
+entity_type: node
+bundle: news
+label: Contribute
+description: 'Use this block to encourage others to help further the content of this article. Ask for photographs to be taken somewhere, ask for help analyzing geologic samples, encourage readers to interview experts in their area.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: a6c3dbba-b302-46a5-ba9f-72b347498857
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sa_seven
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: sa_seven_page_title
+theme: sa_seven
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

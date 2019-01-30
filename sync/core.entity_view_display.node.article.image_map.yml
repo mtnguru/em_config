@@ -1,0 +1,42 @@
+uuid: 4267c44a-6823-40cc-a2bc-25d482f29053
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.image_map
+    - field.field.node.article.body
+    - field.field.node.article.field_comments
+    - field.field.node.article.field_contribute
+    - field.field.node.article.field_media
+    - field.field.node.article.field_show_author
+    - field.field.node.article.field_social_media
+    - field.field.node.article.field_topics
+    - node.type.article
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.article.image_map
+targetEntityType: node
+bundle: article
+mode: image_map
+content:
+  workbench_moderation_control:
+    weight: -20
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_comments: true
+  field_contribute: true
+  field_display_image_map: true
+  field_media: true
+  field_show_author: true
+  field_social_media: true
+  field_topics: true
+  links: true

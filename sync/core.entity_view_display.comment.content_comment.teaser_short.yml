@@ -1,0 +1,16 @@
+uuid: 91c90666-9c33-4211-9ccf-a8e4c649c355
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.content_comment
+    - core.entity_view_mode.comment.teaser_short
+    - field.field.comment.content_comment.comment_body
+id: comment.content_comment.teaser_short
+targetEntityType: comment
+bundle: content_comment
+mode: teaser_short
+content: {  }
+hidden:
+  comment_body: true
+  links: true

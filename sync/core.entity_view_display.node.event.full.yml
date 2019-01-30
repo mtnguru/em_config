@@ -1,0 +1,128 @@
+uuid: 1f98599d-87fc-4c16-817e-ec12e05a2157
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_gps_location
+    - field.field.node.event.field_location
+    - field.field.node.event.field_teaser
+    - field.field.node.event.field_website_link
+    - node.type.event
+  module:
+    - datetime_range
+    - geofield_map
+    - link
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_date:
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '--'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_gps_location:
+    weight: 5
+    label: hidden
+    settings:
+      gmap_api_key: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_empty:
+        empty_behaviour: '0'
+        empty_message: 'No Geofield Value entered for this field'
+      map_center:
+        lat: '42'
+        lon: '12.5'
+        center_force: 0
+      map_zoom_and_pan:
+        zoom:
+          initial: 6
+          force: 0
+          min: 1
+          max: 22
+        scrollwheel: 1
+        draggable: 1
+        map_reset: 0
+      map_controls:
+        disable_default_ui: 0
+        zoom_control: 1
+        map_type_id: roadmap
+        map_type_control: 1
+        map_type_control_options_type_ids:
+          roadmap: roadmap
+          satellite: satellite
+          hybrid: hybrid
+          terrain: terrain
+        scale_control: 1
+        street_view_control: 1
+        fullscreen_control: 1
+      map_marker_and_infowindow:
+        icon_image_path: ''
+        infowindow_field: title
+      map_additional_options: ''
+      custom_style_map:
+        custom_style_control: 0
+        custom_style_name: ''
+        custom_style_options: ''
+        custom_style_default: 0
+      map_markercluster:
+        markercluster_control: 0
+        markercluster_additional_options: ''
+    third_party_settings: {  }
+    type: geofield_google_map
+    region: content
+  field_location:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_website_link:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_teaser: true

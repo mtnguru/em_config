@@ -1,0 +1,76 @@
+uuid: bb44240d-e1b5-4460-8c00-9b254ef3de81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_email
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_gps_location
+    - field.field.node.event.field_location
+    - field.field.node.event.field_teaser
+    - field.field.node.event.field_website_link
+    - node.type.event
+  module:
+    - datetime_range
+    - link
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.event.teaser_email
+targetEntityType: node
+bundle: event
+mode: teaser_email
+content:
+  field_event_date:
+    weight: 1
+    label: inline
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_location:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_teaser:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_website_link:
+    weight: 0
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_gps_location: true

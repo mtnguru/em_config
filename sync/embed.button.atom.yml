@@ -1,0 +1,25 @@
+uuid: 0d484d51-e4b2-4f17-9cc7-eaab10c9e7b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atom
+  content:
+    - 'file:file:6d8b0fbd-88f9-4e22-b0eb-bb6b7b29ab43'
+  module:
+    - entity_embed
+    - node
+label: Atom
+id: atom
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles:
+    - atom
+  display_plugins:
+    - 'view_mode:node.atomizer'
+    - 'view_mode:node.atomizer_minimal'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: 6d8b0fbd-88f9-4e22-b0eb-bb6b7b29ab43

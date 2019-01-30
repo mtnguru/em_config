@@ -1,0 +1,104 @@
+uuid: 3cf5d52f-9263-475e-9647-5100cf1dd11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ticket.body
+    - field.field.node.ticket.field_assigned_to
+    - field.field.node.ticket.field_comments
+    - field.field.node.ticket.field_group
+    - field.field.node.ticket.field_page
+    - field.field.node.ticket.field_priority
+    - field.field.node.ticket.field_status
+    - field.field.node.ticket.field_type
+    - node.type.ticket
+  module:
+    - content_moderation
+    - text
+id: node.ticket.default
+targetEntityType: node
+bundle: ticket
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_assigned_to:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_group:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_page:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_priority:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_status:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 9
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_comments: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

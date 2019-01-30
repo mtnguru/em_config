@@ -1,0 +1,23 @@
+uuid: 54d36d2c-c668-4c01-b6fc-8d4b72f9bc10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boron_11
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_boron_11
+field_name: field_boron_11
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Boron 11'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

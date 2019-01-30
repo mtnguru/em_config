@@ -1,0 +1,23 @@
+uuid: 815b9007-5031-4a72-af76-7e20e412649d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_helium_3
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_helium_3
+field_name: field_helium_3
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Helium 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

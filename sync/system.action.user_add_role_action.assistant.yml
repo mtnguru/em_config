@@ -1,0 +1,14 @@
+uuid: 4555a450-46bc-481e-bd56-8e6f903c3caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.assistant
+  module:
+    - user
+id: user_add_role_action.assistant
+label: 'Add the Assistant role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: assistant

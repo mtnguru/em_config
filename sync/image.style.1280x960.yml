@@ -1,0 +1,15 @@
+uuid: f8e44b0b-01b7-408e-a0e8-b33d06c318d6
+langcode: en
+status: true
+dependencies: {  }
+name: 1280x960
+label: 1280x960
+effects:
+  e3da5bcd-c5ea-4e56-96cd-226ce21da52d:
+    uuid: e3da5bcd-c5ea-4e56-96cd-226ce21da52d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: 960
+      upscale: true

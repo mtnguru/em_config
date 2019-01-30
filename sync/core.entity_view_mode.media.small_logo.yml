@@ -1,0 +1,14 @@
+uuid: d6449672-0c8a-4e2c-8353-2e5d01f0dd1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.small_logo
+label: 'Small Logo'
+targetEntityType: media
+cache: true

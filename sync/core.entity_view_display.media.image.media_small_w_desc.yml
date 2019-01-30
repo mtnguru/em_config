@@ -1,0 +1,66 @@
+uuid: db1a1f7e-53d4-4dd1-b1ae-6896380fe2af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_small_w_desc
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - image.style.640x480
+    - media.type.image
+  module:
+    - az_components
+    - image
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.media_small_w_desc
+targetEntityType: media
+bundle: image
+mode: media_small_w_desc
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings:
+      height: '80'
+      overlayHeight: '60'
+    third_party_settings: {  }
+    type: more_slider_formatter
+    region: content
+  image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 640x480
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_dimensions: true
+  field_geofield: true
+  field_group: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  thumbnail: true
+  uid: true

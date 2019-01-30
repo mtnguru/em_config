@@ -1,0 +1,21 @@
+uuid: 1980376a-ad0a-4f35-9d10-db19cc8daa74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_private_notes
+  module:
+    - text
+    - user
+id: user.user.field_private_notes
+field_name: field_private_notes
+entity_type: user
+bundle: user
+label: 'Private Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 3c031aef-2a9e-4aab-b205-f1ba83342161
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_be_actual
+    - node.type.atom
+id: node.atom.field_be_actual
+field_name: field_be_actual
+entity_type: node
+bundle: atom
+label: 'BE - Actual'
+description: 'The Binding energy as calculated from the BE - Nucleon value.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' MeV '
+field_type: float

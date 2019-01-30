@@ -1,0 +1,29 @@
+uuid: fc232839-5f84-4732-ae94-06e2be74ee89
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.content_comment
+    - core.entity_view_mode.comment.teaser
+    - field.field.comment.content_comment.comment_body
+  module:
+    - text
+id: comment.content_comment.teaser
+targetEntityType: comment
+bundle: content_comment
+mode: teaser
+content:
+  comment_body:
+    label: hidden
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 320
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

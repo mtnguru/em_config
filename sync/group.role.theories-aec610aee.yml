@@ -1,0 +1,17 @@
+uuid: f69ec997-60dd-4dee-b8c0-65404661638c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.associate
+id: theories-aec610aee
+label: Associate
+weight: -2
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

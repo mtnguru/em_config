@@ -1,0 +1,22 @@
+uuid: b45753be-88a6-4d0b-9a01-da9aaa190a3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.birkeland
+  module:
+    - text
+id: node.birkeland.body
+field_name: body
+entity_type: node
+bundle: birkeland
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

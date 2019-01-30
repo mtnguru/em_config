@@ -1,0 +1,15 @@
+uuid: c8b9f853-161a-43b1-861a-1e490c8850b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-confidant
+label: Confidant
+weight: 103
+internal: false
+audience: member
+group_type: theories
+permissions_ui: true
+permissions:
+  - 'administer group'

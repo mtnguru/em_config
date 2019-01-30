@@ -1,0 +1,23 @@
+uuid: 3cb24f8b-ceee-439f-801a-d37d164ec477
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carbon_on_carbon
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_carbon_on_carbon
+field_name: field_carbon_on_carbon
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Carbon on Carbon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

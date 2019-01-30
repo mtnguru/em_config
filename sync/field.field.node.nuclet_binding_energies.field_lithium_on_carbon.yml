@@ -1,0 +1,23 @@
+uuid: aff14c05-3b3c-43a4-b506-4071db699f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lithium_on_carbon
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_lithium_on_carbon
+field_name: field_lithium_on_carbon
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Lithium on Carbon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

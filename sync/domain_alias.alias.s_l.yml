@@ -1,0 +1,9 @@
+uuid: 179ebdfc-5634-4ac3-92e5-0d56eb8b204a
+langcode: en
+status: true
+dependencies: {  }
+id: s_l
+domain_id: structuredatom_com
+pattern: s.l
+redirect: 0
+environment: default

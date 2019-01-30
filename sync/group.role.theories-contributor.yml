@@ -1,0 +1,68 @@
+uuid: 61692b64-986c-4ab0-adc4-555b9189b866
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-contributor
+label: Contributor
+weight: 101
+internal: false
+audience: member
+group_type: theories
+permissions_ui: true
+permissions:
+  0: 'access content overview'
+  2: 'delete group'
+  3: 'edit group'
+  4: 'administer members'
+  5: 'update own group_membership content'
+  6: 'access group_node overview'
+  7: 'create group_node:article entity'
+  8: 'delete own group_node:article entity'
+  9: 'update own group_node:article entity'
+  10: 'view unpublished group_node:article entity'
+  11: 'create group_node:article content'
+  12: 'delete own group_node:article content'
+  13: 'update own group_node:article content'
+  14: 'create group_node:book entity'
+  15: 'delete own group_node:book entity'
+  16: 'update own group_node:book entity'
+  17: 'view unpublished group_node:book entity'
+  18: 'create group_node:book content'
+  19: 'delete own group_node:book content'
+  20: 'update own group_node:book content'
+  21: 'view unpublished group_node:ticket entity'
+  22: 'update any group_node:book entity'
+  23: 'delete any group_node:book content'
+  24: 'update any group_node:book content'
+  25: 'delete any group_node:article entity'
+  26: 'update any group_node:article entity'
+  27: 'delete any group_node:article content'
+  28: 'update any group_node:article content'
+  29: 'delete any group_node:book entity'
+  30: 'update any group_node:ticket entity'
+  31: 'update any group_node:ticket content'
+  32: 'delete own group_node:event entity'
+  33: 'create group_node:news entity'
+  34: 'delete any group_node:news entity'
+  35: 'delete own group_node:news entity'
+  36: 'update any group_node:news entity'
+  37: 'update own group_node:news entity'
+  38: 'view unpublished group_node:news entity'
+  39: 'create group_node:news content'
+  40: 'delete any group_node:news content'
+  41: 'delete own group_node:news content'
+  42: 'update any group_node:news content'
+  43: 'update own group_node:news content'
+  44: 'create group_node:glossary entity'
+  45: 'delete any group_node:glossary entity'
+  46: 'delete own group_node:glossary entity'
+  47: 'update any group_node:glossary entity'
+  48: 'update own group_node:glossary entity'
+  49: 'view unpublished group_node:glossary entity'
+  50: 'create group_node:glossary content'
+  51: 'delete any group_node:glossary content'
+  52: 'delete own group_node:glossary content'
+  53: 'update any group_node:glossary content'
+  54: 'update own group_node:glossary content'

@@ -1,0 +1,9 @@
+uuid: 13672beb-70f6-4d2e-8cf7-8ab41e4319c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ticket Type'
+vid: ticket_type
+description: 'Is this a bug, suggestion, project, enhancement, question?'
+hierarchy: 0
+weight: 0

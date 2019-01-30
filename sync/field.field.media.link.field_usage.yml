@@ -1,0 +1,40 @@
+uuid: 261671d0-df9b-4508-9dca-cbe490c3499c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_usage
+    - media.type.link
+    - node.type.article
+    - node.type.book
+    - node.type.event
+    - node.type.glossary
+    - node.type.news
+    - node.type.page
+    - node.type.ticket
+id: media.link.field_usage
+field_name: field_usage
+entity_type: media
+bundle: link
+label: 'Found In'
+description: 'List of articles or conversations this image is found in.  This value is filled in automatically when an article with this image is stored.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      page: page
+      book: book
+      event: event
+      news: news
+      ticket: ticket
+      glossary: glossary
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

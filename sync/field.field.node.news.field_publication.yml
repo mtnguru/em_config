@@ -1,0 +1,19 @@
+uuid: 40f837ef-1e0a-493d-941b-974cfb4276b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication
+    - node.type.news
+id: node.news.field_publication
+field_name: field_publication
+entity_type: node
+bundle: news
+label: Publication
+description: "Name of the website or publication this information was found in.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

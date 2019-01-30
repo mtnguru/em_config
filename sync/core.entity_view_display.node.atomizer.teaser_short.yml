@@ -1,0 +1,27 @@
+uuid: b3a2dd96-de6f-4f73-9b55-dd19bff2c579
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_short
+    - field.field.node.atomizer.body
+    - field.field.node.atomizer.field_configuration_file
+    - node.type.atomizer
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.atomizer.teaser_short
+targetEntityType: node
+bundle: atomizer
+mode: teaser_short
+content: {  }
+hidden:
+  body: true
+  field_configuration_file: true
+  links: true

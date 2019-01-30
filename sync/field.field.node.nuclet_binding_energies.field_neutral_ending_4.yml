@@ -1,0 +1,23 @@
+uuid: 142a47ed-5c23-4b33-a0d1-63d3cbd6c836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_neutral_ending_4
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_neutral_ending_4
+field_name: field_neutral_ending_4
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Neutral Ending 4'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,28 @@
+uuid: 3c7c9892-d221-4580-b8c8-4aad723eaf46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_author
+    - media.type.video
+id: media.video.field_author
+field_name: field_author
+entity_type: media
+bundle: video
+label: Videographer
+description: "Person that created this video\r\n"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

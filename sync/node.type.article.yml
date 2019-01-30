@@ -1,0 +1,17 @@
+uuid: f1c9a94f-28b6-4552-ab01-64f20de0c1e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Article
+type: article
+description: 'Used for most pages and conversations on the site.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

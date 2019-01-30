@@ -1,0 +1,26 @@
+uuid: b0d33f03-00f2-42dc-b191-cc42cd6da8a3
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.az_media
+  module:
+    - views
+  theme:
+    - em_neato
+id: em_neato_views_block__az_media_block_map_usage
+theme: em_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'views_block:az_media-block_map_usage'
+settings:
+  id: 'views_block:az_media-block_map_usage'
+  label: 'Image Locations'
+  provider: views
+  label_display: visible
+  views_label: 'Image Locations'
+  items_per_page: none
+  context_mapping:
+    field_usage_target_id: '@node.node_route_context:node'
+visibility: {  }

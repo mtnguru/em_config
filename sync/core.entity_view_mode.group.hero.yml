@@ -1,0 +1,14 @@
+uuid: e3f6ad95-5738-4120-af74-224991868bc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.hero
+label: Hero
+targetEntityType: group
+cache: true

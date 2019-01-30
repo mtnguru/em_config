@@ -1,0 +1,33 @@
+uuid: 4b06875f-6154-4acc-ad45-1ce1f0ad7393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comments
+    - node.type.glossary
+  module:
+    - comment
+id: node.glossary.field_comments
+field_name: field_comments
+entity_type: node
+bundle: glossary
+label: Comments
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

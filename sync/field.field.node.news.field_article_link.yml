@@ -1,0 +1,23 @@
+uuid: 64efbb7e-0f62-4efe-a4fd-e4e8e972d8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_link
+    - node.type.news
+  module:
+    - link
+id: node.news.field_article_link
+field_name: field_article_link
+entity_type: node
+bundle: news
+label: 'Link to Original Article'
+description: 'Link to the article this information was extracted from'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

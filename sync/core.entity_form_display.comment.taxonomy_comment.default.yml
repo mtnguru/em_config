@@ -1,0 +1,29 @@
+uuid: a8c51bda-5357-46fb-ab13-992c75c77da7
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.taxonomy_comment
+    - field.field.comment.taxonomy_comment.comment_body
+  module:
+    - text
+id: comment.taxonomy_comment.default
+targetEntityType: comment
+bundle: taxonomy_comment
+mode: default
+content:
+  author:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  subject: true

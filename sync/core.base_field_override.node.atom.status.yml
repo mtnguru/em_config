@@ -1,0 +1,22 @@
+uuid: 4a18d76c-181f-4340-9b48-15427aad7e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atom
+id: node.atom.status
+field_name: status
+entity_type: node
+bundle: atom
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

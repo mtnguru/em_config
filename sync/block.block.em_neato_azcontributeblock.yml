@@ -1,0 +1,20 @@
+uuid: ebcee5cb-0f97-4666-8fa8-6cf05fdcc0b7
+langcode: en
+status: false
+dependencies:
+  module:
+    - az_content
+  theme:
+    - em_neato
+id: em_neato_azcontributeblock
+theme: em_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: az_contribute_block
+settings:
+  id: az_contribute_block
+  label: Contribute
+  provider: az_content
+  label_display: visible
+visibility: {  }

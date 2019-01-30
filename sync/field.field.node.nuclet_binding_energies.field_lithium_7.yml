@@ -1,0 +1,23 @@
+uuid: e4f66864-bf91-44c1-984f-3843982032ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lithium_7
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_lithium_7
+field_name: field_lithium_7
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Lithium 7'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

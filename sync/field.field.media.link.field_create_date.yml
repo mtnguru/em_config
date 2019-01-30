@@ -1,0 +1,21 @@
+uuid: 4f02b769-0f0d-464c-b1fd-c4a80eb6f83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_create_date
+    - media.type.link
+  module:
+    - datetime
+id: media.link.field_create_date
+field_name: field_create_date
+entity_type: media
+bundle: link
+label: 'Create date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

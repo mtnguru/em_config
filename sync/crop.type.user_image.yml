@@ -1,0 +1,12 @@
+uuid: f2cd1779-ce02-4b51-bed9-ef92c26b4fa8
+langcode: en
+status: true
+dependencies: {  }
+label: 'User image'
+id: user_image
+description: ''
+aspect_ratio: '3:4'
+soft_limit_width: 120
+soft_limit_height: 160
+hard_limit_width: 120
+hard_limit_height: 160

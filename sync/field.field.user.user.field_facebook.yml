@@ -1,0 +1,23 @@
+uuid: 32a8c26c-0534-4f45-ae43-272d9bd55308
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_facebook
+  module:
+    - link
+    - user
+id: user.user.field_facebook
+field_name: field_facebook
+entity_type: user
+bundle: user
+label: Facebook
+description: 'Your facebook handle.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

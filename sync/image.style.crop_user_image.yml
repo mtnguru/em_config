@@ -1,0 +1,15 @@
+uuid: 82df00ab-e4d6-480f-acdb-b4e00019c927
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: crop_user_image
+label: 'Cropped: User image'
+effects:
+  63bc1bd9-5475-4698-9925-64f8c9e2c18c:
+    uuid: 63bc1bd9-5475-4698-9925-64f8c9e2c18c
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: user_image

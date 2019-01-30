@@ -1,0 +1,22 @@
+uuid: 9394176f-eab7-4ee8-a1b9-84596e1d07bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.nuclet_binding_energies
+  module:
+    - text
+id: node.nuclet_binding_energies.body
+field_name: body
+entity_type: node
+bundle: nuclet_binding_energies
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

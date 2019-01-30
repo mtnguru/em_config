@@ -1,0 +1,45 @@
+uuid: abb65f41-0fec-4381-99c2-02c5607da969
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.full
+    - field.field.group.theories.field_announcement
+    - field.field.group.theories.field_body
+    - field.field.group.theories.field_directory_book
+    - field.field.group.theories.field_hero_image
+    - field.field.group.theories.field_highlight_color
+    - field.field.group.theories.field_logo_image
+    - field.field.group.theories.field_short_description
+    - field.field.group.theories.field_status
+    - field.field.group.theories.field_weight
+    - group.type.theories
+  module:
+    - az_components
+id: group.theories.full
+targetEntityType: group
+bundle: theories
+mode: full
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings:
+      height: '200'
+      overlayHeight: '150'
+    third_party_settings: {  }
+    type: more_slider_formatter
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_announcement: true
+  field_directory_book: true
+  field_hero_image: true
+  field_highlight_color: true
+  field_logo_image: true
+  field_short_description: true
+  field_status: true
+  field_weight: true
+  label: true
+  uid: true

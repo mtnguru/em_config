@@ -1,0 +1,274 @@
+uuid: b6622065-6016-4a98-a9a2-adf453404ef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_address
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_descriptive_location
+    - field.field.user.user.field_display_full_user_name
+    - field.field.user.user.field_domain_admin
+    - field.field.user.user.field_email_new_content
+    - field.field.user.user.field_email_updates
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_private_notes
+    - field.field.user.user.field_subscriptions
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_website
+    - image.style.user_profile
+  module:
+    - address
+    - field_group
+    - image
+    - lightning_media
+    - link
+    - mailchimp_lists
+    - telephone
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_identification:
+      children:
+        - field_first_name
+        - field_last_name
+        - field_display_full_user_name
+        - field_title
+        - field_picture
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: group-identification
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Identification
+    group_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: group-account
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Account
+    group_social_medi:
+      children:
+        - field_website
+        - field_facebook
+        - field_twitter
+        - field_linkedin
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: group-social-media
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Social media'
+    group_notification:
+      children:
+        - contact
+        - field_subscriptions
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        id: group-notifications
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Notifications
+    group_private:
+      children:
+        - field_private_notes
+        - field_address
+        - field_phone
+      parent_name: ''
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        id: group-private
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Private
+    group_location:
+      children:
+        - timezone
+        - field_descriptive_location
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: group-location
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Location
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 23
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_biography:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_descriptive_location:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_display_full_user_name:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_domain_admin:
+    type: options_buttons
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    weight: 19
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_linkedin:
+    weight: 21
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_phone:
+    weight: 24
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_picture:
+    type: image_image
+    weight: 5
+    settings:
+      preview_image_style: user_profile
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_private_notes:
+    weight: 22
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_subscriptions:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: mailchimp_lists_select
+    region: content
+  field_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_twitter:
+    weight: 20
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_website:
+    weight: 18
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  google_analytics:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_email_new_content: true
+  field_email_updates: true
+  language: true
+  path: true

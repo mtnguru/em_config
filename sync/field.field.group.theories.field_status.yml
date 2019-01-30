@@ -1,0 +1,23 @@
+uuid: e0281039-4d3f-4d38-ad15-52f633f97650
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_status
+    - group.type.theories
+  module:
+    - options
+id: group.theories.field_status
+field_name: field_status
+entity_type: group
+bundle: theories
+label: Status
+description: 'Is this community currently active, new, hidden or closed.'
+required: true
+translatable: false
+default_value:
+  -
+    value: active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

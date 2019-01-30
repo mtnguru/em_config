@@ -1,0 +1,22 @@
+uuid: 1635e886-e838-4f72-a7b9-8e0935317b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.email
+  module:
+    - text
+id: node.email.body
+field_name: body
+entity_type: node
+bundle: email
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

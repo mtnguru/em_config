@@ -1,0 +1,54 @@
+uuid: d6126eba-50c0-4e70-91b7-f565f6412e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.atom.body
+    - field.field.node.atom.field__inner_electrons
+    - field.field.node.atom.field__outer_electrons
+    - field.field.node.atom.field__protons
+    - field.field.node.atom.field_approval
+    - field.field.node.atom.field_atomic_structure
+    - field.field.node.atom.field_element
+    - field.field.node.atom.field_isotope
+    - field.field.node.atom.field_notes
+    - field.field.node.atom.field_nuclear_spin
+    - field.field.node.atom.field_stability
+    - field.field.node.atom.field_valence
+    - node.type.atom
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.atom.teaser
+targetEntityType: node
+bundle: atom
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field__inner_electrons: true
+  field__outer_electrons: true
+  field__protons: true
+  field_approval: true
+  field_atomic_structure: true
+  field_element: true
+  field_isotope: true
+  field_notes: true
+  field_nuclear_spin: true
+  field_stability: true
+  field_valence: true
+  links: true

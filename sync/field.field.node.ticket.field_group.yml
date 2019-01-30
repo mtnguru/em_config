@@ -1,0 +1,28 @@
+uuid: a82eb04f-8879-4af8-b69d-677c9dd33090
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group
+    - group.type.theories
+    - node.type.ticket
+id: node.ticket.field_group
+field_name: field_group
+entity_type: node
+bundle: ticket
+label: Group
+description: 'The Group that was being viewed when this ticket was submitted.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      theories: theories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

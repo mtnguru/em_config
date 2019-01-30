@@ -1,0 +1,8 @@
+uuid: c8a2c0c9-3d63-4d01-9919-03930b9c30cd
+langcode: en
+status: true
+dependencies: {  }
+id: top-nav-sa
+label: 'Top Nav SA'
+description: 'Top navigation bar for Structured Atom'
+locked: false

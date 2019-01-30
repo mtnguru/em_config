@@ -1,0 +1,23 @@
+uuid: 4dc2c0dc-9c2e-49fb-9b96-e6d76200ef6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_be_nucleon
+    - node.type.atom
+id: node.atom.field_be_nucleon
+field_name: field_be_nucleon
+entity_type: node
+bundle: atom
+label: 'BE - Nucleon'
+description: 'Binding energy per nucleon as found in the table of nuclides'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' KeV'
+field_type: float

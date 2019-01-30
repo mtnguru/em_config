@@ -1,0 +1,20 @@
+uuid: c1953e18-9115-42b9-bac8-d5cace874675
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_roles
+field_name: field_roles
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user_role
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

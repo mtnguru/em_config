@@ -1,0 +1,23 @@
+uuid: f9a7f3bc-cac1-4ecd-9669-08ee39c916b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_beryllium_on_carbon
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_beryllium_on_carbon
+field_name: field_beryllium_on_carbon
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Beryllium on Carbon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

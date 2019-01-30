@@ -1,0 +1,21 @@
+uuid: babb4adb-23c3-416b-812a-3413efc7ee8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_geofield
+    - media.type.image
+  module:
+    - geofield
+id: media.image.field_geofield
+field_name: field_geofield
+entity_type: media
+bundle: image
+label: Geofield
+description: 'If the image has embedded GPS coordinates then this field is filled in automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

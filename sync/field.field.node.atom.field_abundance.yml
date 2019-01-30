@@ -1,0 +1,23 @@
+uuid: fac627bf-be12-4871-a866-0926fef4ab74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abundance
+    - node.type.atom
+id: node.atom.field_abundance
+field_name: field_abundance
+entity_type: node
+bundle: atom
+label: Abundance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' %'
+field_type: float

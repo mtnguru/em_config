@@ -1,0 +1,23 @@
+uuid: 35c158db-b6f0-491e-8930-e641dbfadc68
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'People that are trusted users'
+id: associate
+label: Associate
+weight: -4
+is_admin: null
+permissions:
+  - 'atomizer atoms development'
+  - 'atomizer atoms trusted'
+  - 'atomizer display all atoms'
+  - 'atomizer display atom builder'
+  - 'atomizer display structure'
+  - 'atomizer embed atoms'
+  - 'az groups view hidden'
+  - 'show unpublished book pages'
+  - 'view own unpublished content'

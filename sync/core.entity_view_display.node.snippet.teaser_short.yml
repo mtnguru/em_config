@@ -1,0 +1,26 @@
+uuid: 2e0efb14-3fc2-4be7-b4e4-3ee8e70a4b4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_short
+    - field.field.node.snippet.body
+    - node.type.snippet
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.snippet.teaser_short
+targetEntityType: node
+bundle: snippet
+mode: teaser_short
+content: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  links: true

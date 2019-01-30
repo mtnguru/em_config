@@ -1,0 +1,17 @@
+uuid: 0926ac95-c646-46d4-ac2d-bb613ce3d798
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.ninja
+id: theories-ed49ab13a
+label: Ninja
+weight: -5
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,30 @@
+uuid: 0ebdee42-f10d-4793-8c0e-d886d5f928a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - user
+id: user.field_picture
+field_name: field_picture
+entity_type: user
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 8775c62f-b3ae-44d8-a23b-98b3440cf08c
+    alt: Yoda
+    title: ''
+    width: 223
+    height: 226
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

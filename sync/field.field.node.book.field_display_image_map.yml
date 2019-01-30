@@ -1,0 +1,23 @@
+uuid: dc54a097-3831-46e2-a757-2c7b1dc222b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_image_map
+    - node.type.book
+id: node.book.field_display_image_map
+field_name: field_display_image_map
+entity_type: node
+bundle: book
+label: 'Display Image Map'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

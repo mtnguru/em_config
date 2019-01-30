@@ -1,0 +1,83 @@
+uuid: 931a5637-063a-4c8f-a8c3-b3113b8b20a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_wysiwyg
+    - editor
+    - entity_embed
+name: 'Full HTML'
+format: full_html
+weight: -10
+filters:
+  filter_az_wysiwyg:
+    id: filter_az_wysiwyg
+    provider: az_wysiwyg
+    status: true
+    weight: -50
+    settings:
+      footnote_collapse: '0'
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: false
+    weight: -47
+    settings: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: -46
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -48
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: -43
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -44
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -49
+    settings:
+      allowed_html: '<abbr title class> <a href hreflang title id class> <em> <strong> <cite> <blockquote cite class> <code> <ul type class> <ol type start class> <li id class> <dl class> <dt> <dd> <h3 id class> <h4 id class> <h5 id class> <h6 id> <img data-caption data-align data-entity-uuid data-entity-type alt src> <p class> <pre class> <s> <sub> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-settings data-entity-embed-display-settings data-align data-caption data-embed-button az-data az-class> <table class> <caption class> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <sup><span style class>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -41
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: -42
+    settings:
+      filter_url_length: 72

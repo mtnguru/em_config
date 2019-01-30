@@ -1,0 +1,17 @@
+uuid: 79fe9ea1-e5bc-48f2-a9a9-b697b6fdbba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.assistant
+id: theories-46c073eec
+label: Assistant
+weight: -2
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,21 @@
+uuid: 11884e8e-0475-40fa-ad2f-fd6fa34d7127
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement
+    - node.type.landing_page
+id: node.landing_page.field_announcement
+field_name: field_announcement
+entity_type: node
+bundle: landing_page
+label: 'Announcement Snippet'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

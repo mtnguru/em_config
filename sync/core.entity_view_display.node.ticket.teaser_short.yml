@@ -1,0 +1,67 @@
+uuid: 4a488aa7-5dfa-42a3-a8e2-0ce584d2dafb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_short
+    - field.field.node.ticket.body
+    - field.field.node.ticket.field_assigned_to
+    - field.field.node.ticket.field_comments
+    - field.field.node.ticket.field_group
+    - field.field.node.ticket.field_page
+    - field.field.node.ticket.field_priority
+    - field.field.node.ticket.field_status
+    - field.field.node.ticket.field_type
+    - node.type.ticket
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.ticket.teaser_short
+targetEntityType: node
+bundle: ticket
+mode: teaser_short
+content:
+  field_assigned_to:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_priority:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_status:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  body: true
+  field_comments: true
+  field_group: true
+  field_page: true
+  links: true

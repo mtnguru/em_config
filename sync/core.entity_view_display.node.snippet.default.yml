@@ -1,0 +1,36 @@
+uuid: c5cab1a0-3399-46c3-bb7c-24c61d70201d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.snippet.body
+    - node.type.snippet
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.snippet.default
+targetEntityType: node
+bundle: snippet
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true

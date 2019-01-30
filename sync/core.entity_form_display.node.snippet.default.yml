@@ -1,0 +1,38 @@
+uuid: 5f986869-a81e-47f3-a0ff-96cd55d16d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.snippet.body
+    - node.type.snippet
+  module:
+    - text
+id: node.snippet.default
+targetEntityType: node
+bundle: snippet
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

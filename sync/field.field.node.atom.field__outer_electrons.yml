@@ -1,0 +1,23 @@
+uuid: 11d1ebbf-a3ff-4a9b-9da5-d4d6e9f173f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__outer_electrons
+    - node.type.atom
+id: node.atom.field__outer_electrons
+field_name: field__outer_electrons
+entity_type: node
+bundle: atom
+label: '# Outer electrons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 400
+  prefix: ''
+  suffix: ''
+field_type: integer

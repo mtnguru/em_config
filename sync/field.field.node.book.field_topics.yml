@@ -1,0 +1,28 @@
+uuid: 97441eb0-1b22-442b-8c05-3b54eae7ed0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.book
+    - node.type.glossary
+id: node.book.field_topics
+field_name: field_topics
+entity_type: node
+bundle: book
+label: Topics
+description: 'List of topics related to this book page - <a href="/node/add/glossary" target="_blank">Create new Topic / Glossary Term</a>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      glossary: glossary
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

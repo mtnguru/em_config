@@ -1,0 +1,19 @@
+uuid: 279e3c7e-dfbe-496b-be12-b49f8b058c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_configuration_file
+    - node.type.atomizer
+id: node.atomizer.field_configuration_file
+field_name: field_configuration_file
+entity_type: node
+bundle: atomizer
+label: 'Configuration file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

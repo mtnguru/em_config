@@ -1,0 +1,54 @@
+uuid: da711842-d2ac-4cfe-8dd3-9b2b83cdf74e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.birkeland.body
+    - field.field.node.birkeland.field_media
+    - field.field.node.birkeland.field_structure
+    - node.type.birkeland
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.birkeland.full
+targetEntityType: node
+bundle: birkeland
+mode: full
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: media_small
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_structure:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

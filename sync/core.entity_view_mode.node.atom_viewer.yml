@@ -1,0 +1,14 @@
+uuid: 546a81af-8d8b-434d-80d4-be657bed39f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.atom_viewer
+label: 'Atom Viewer'
+targetEntityType: node
+cache: true

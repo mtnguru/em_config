@@ -1,0 +1,11 @@
+uuid: adb614bb-75eb-49ac-a3b7-f9204c2684ba
+langcode: en
+status: true
+dependencies: {  }
+id: structuredatom_com
+domain_id: 10132296
+hostname: structuredatom.org
+name: 'Structured Atom'
+scheme: variable
+weight: 2
+is_default: false

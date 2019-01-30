@@ -1,0 +1,263 @@
+uuid: c0d3ab1c-1e35-49b9-8b46-96c4b05524f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nuclet_binding_energies.body
+    - field.field.node.nuclet_binding_energies.field_beryllium_9
+    - field.field.node.nuclet_binding_energies.field_beryllium_on_carbon
+    - field.field.node.nuclet_binding_energies.field_boron_10
+    - field.field.node.nuclet_binding_energies.field_boron_11
+    - field.field.node.nuclet_binding_energies.field_boron_on_carbon
+    - field.field.node.nuclet_binding_energies.field_carbon_12
+    - field.field.node.nuclet_binding_energies.field_carbon_on_carbon
+    - field.field.node.nuclet_binding_energies.field_deuterium
+    - field.field.node.nuclet_binding_energies.field_deuterium_on_carbon
+    - field.field.node.nuclet_binding_energies.field_extra_neutron
+    - field.field.node.nuclet_binding_energies.field_extra_neutron_on_carbon
+    - field.field.node.nuclet_binding_energies.field_helium_3
+    - field.field.node.nuclet_binding_energies.field_helium_4
+    - field.field.node.nuclet_binding_energies.field_lithium_6
+    - field.field.node.nuclet_binding_energies.field_lithium_7
+    - field.field.node.nuclet_binding_energies.field_lithium_on_carbon
+    - field.field.node.nuclet_binding_energies.field_neutral_ending_4
+    - field.field.node.nuclet_binding_energies.field_neutral_ending_5
+    - field.field.node.nuclet_binding_energies.field_tritium
+    - node.type.nuclet_binding_energies
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.nuclet_binding_energies.default
+targetEntityType: node
+bundle: nuclet_binding_energies
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_beryllium_9:
+    weight: 8
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_beryllium_on_carbon:
+    weight: 17
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_boron_10:
+    weight: 9
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_boron_11:
+    weight: 10
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_boron_on_carbon:
+    weight: 18
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_carbon_12:
+    weight: 11
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_carbon_on_carbon:
+    weight: 19
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_deuterium:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_deuterium_on_carbon:
+    weight: 15
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_extra_neutron:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_extra_neutron_on_carbon:
+    weight: 14
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_helium_3:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_helium_4:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_lithium_6:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_lithium_7:
+    weight: 7
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_lithium_on_carbon:
+    weight: 16
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_neutral_ending_4:
+    weight: 12
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_neutral_ending_5:
+    weight: 13
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_tritium:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  links:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: fba74a30-761f-4a80-b938-ac9841050207
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.directory
+label: Directory
+targetEntityType: node
+cache: true

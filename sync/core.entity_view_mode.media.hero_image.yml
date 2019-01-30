@@ -1,0 +1,14 @@
+uuid: b5545cec-bb82-4630-8087-26cf34a1c5c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.hero_image
+label: 'Hero Image'
+targetEntityType: media
+cache: true

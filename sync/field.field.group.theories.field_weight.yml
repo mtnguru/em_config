@@ -1,0 +1,25 @@
+uuid: 59615ad5-7230-4f08-a47e-1e2bc53cee13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_weight
+    - group.type.theories
+id: group.theories.field_weight
+field_name: field_weight
+entity_type: group
+bundle: theories
+label: Weight
+description: 'Used to sort communities on the community page.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

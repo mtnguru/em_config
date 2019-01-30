@@ -1,0 +1,14 @@
+uuid: 0a9ff7a7-69e0-4498-ae35-e79ae45f811c
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.logo
+label: Logo
+targetEntityType: group
+cache: true

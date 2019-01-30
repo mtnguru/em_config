@@ -1,0 +1,30 @@
+uuid: a52b06db-f367-41b7-9b7a-9e376174db5c
+langcode: en
+status: false
+dependencies:
+  module:
+    - ctools
+    - group
+  theme:
+    - em_neato
+id: em_neato_groupoperations
+theme: em_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Community operations'
+  provider: group
+  label_display: visible
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      theories: theories
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

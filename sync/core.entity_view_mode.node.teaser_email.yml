@@ -1,0 +1,14 @@
+uuid: b8a58f2a-b69a-4318-9117-82deeb448a1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.teaser_email
+label: 'Teaser - Email'
+targetEntityType: node
+cache: true

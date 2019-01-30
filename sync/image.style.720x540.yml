@@ -1,0 +1,15 @@
+uuid: 8076599b-11b6-4fd4-a6b3-b4ea166bce7d
+langcode: en
+status: true
+dependencies: {  }
+name: 720x540
+label: 720x540
+effects:
+  546eda84-a610-479a-ad0b-6f42ee036762:
+    uuid: 546eda84-a610-479a-ad0b-6f42ee036762
+    id: image_scale
+    weight: 1
+    data:
+      width: 720
+      height: 540
+      upscale: true

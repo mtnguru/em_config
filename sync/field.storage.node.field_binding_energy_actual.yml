@@ -1,0 +1,18 @@
+uuid: 50700437-6b41-4bf1-ab17-8f555951f846
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_binding_energy_actual
+field_name: field_binding_energy_actual
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,49 @@
+uuid: bc24ecd5-0093-4fdb-b2f0-a7688eca05f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.small_logo
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - media.type.image
+  module:
+    - imager
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.small_logo
+targetEntityType: media
+bundle: image
+mode: small_logo
+content:
+  image:
+    type: imager_formatter
+    weight: 0
+    label: hidden
+    settings:
+      imager_style: 300x100
+      imager_mode: popup
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  created: true
+  field_author: true
+  field_create_date: true
+  field_description: true
+  field_dimensions: true
+  field_geofield: true
+  field_group: true
+  field_location: true
+  field_media_in_library: true
+  field_usage: true
+  name: true
+  thumbnail: true
+  uid: true

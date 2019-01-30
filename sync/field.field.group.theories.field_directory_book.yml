@@ -1,0 +1,25 @@
+uuid: dbe49f01-d304-4f97-8276-64072fc1ca1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_directory_book
+    - group.type.theories
+id: group.theories.field_directory_book
+field_name: field_directory_book
+entity_type: group
+bundle: theories
+label: 'Directory book'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: book_list
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

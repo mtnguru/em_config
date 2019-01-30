@@ -1,0 +1,21 @@
+uuid: 890b4dcb-8f3a-44d1-8b5f-d4d9b707a0a2
+langcode: en
+status: false
+dependencies:
+  module:
+    - az_book
+  theme:
+    - sa_neato
+id: azbooknavigation_2
+theme: sa_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: az_book_navigation
+settings:
+  id: az_book_navigation
+  label: 'AZ Book navigation'
+  provider: az_book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }

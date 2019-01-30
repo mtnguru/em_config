@@ -1,0 +1,15 @@
+uuid: a5fa4636-a0df-442f-95d1-8775f9409842
+langcode: en
+status: true
+dependencies: {  }
+name: 900x300
+label: 900x300
+effects:
+  e3a0b8dd-160f-43e4-b58f-9c3bb5eee70b:
+    uuid: e3a0b8dd-160f-43e4-b58f-9c3bb5eee70b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 300
+      anchor: center-center

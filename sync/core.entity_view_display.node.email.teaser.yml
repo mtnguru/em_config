@@ -1,0 +1,66 @@
+uuid: bcf9b8b7-07b6-4f8b-ab8b-cf6baaec0592
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.email.body
+    - field.field.node.email.field_group_roles
+    - field.field.node.email.field_groups
+    - field.field.node.email.field_roles
+    - field.field.node.email.field_send_email
+    - node.type.email
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.email.teaser
+targetEntityType: node
+bundle: email
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 320
+    third_party_settings: {  }
+    region: content
+  field_group_roles:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_groups:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_roles:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_send_email: true

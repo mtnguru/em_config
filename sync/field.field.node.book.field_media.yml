@@ -1,0 +1,30 @@
+uuid: 97c47d83-6501-4d0d-9626-3d50c7976307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.image
+    - media.type.video
+    - node.type.book
+id: node.book.field_media
+field_name: field_media
+entity_type: node
+bundle: book
+label: Media
+description: 'Optional Image or Video that appears at top of page before text.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

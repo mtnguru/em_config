@@ -1,0 +1,19 @@
+uuid: f0d21985-6c72-40ac-a1b2-0a702fbc69e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+    - node.type.snippet
+  module:
+    - gnode
+    - node
+id: theories-group_node-snippet
+label: 'Theories: Group node (Snippet)'
+description: 'Adds <em class="placeholder">Snippet</em> content to groups both publicly and privately.'
+group_type: theories
+content_plugin: 'group_node:snippet'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

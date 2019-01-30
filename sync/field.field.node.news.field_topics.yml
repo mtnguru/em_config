@@ -1,0 +1,28 @@
+uuid: fecb75da-e868-4f3f-91af-8802e2bc312c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.glossary
+    - node.type.news
+id: node.news.field_topics
+field_name: field_topics
+entity_type: node
+bundle: news
+label: Topics
+description: "List of topics related to this article.<br>\r\n<a href=\"/topics\" target=\"_blank\">List Topics</a><br />\r\n<a href=\"/node/add/glossary\" target=\"_blank\">Create New Topic</a>"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      glossary: glossary
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

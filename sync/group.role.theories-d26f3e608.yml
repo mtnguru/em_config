@@ -1,0 +1,17 @@
+uuid: 1497b06d-08e4-4963-8e75-380cee6cc69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.builder
+id: theories-d26f3e608
+label: Builder
+weight: -2
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

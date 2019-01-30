@@ -1,0 +1,50 @@
+uuid: c0f9c0d0-e917-4e04-bb38-72a14f1f105d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.hero
+    - field.field.group.theories.field_announcement
+    - field.field.group.theories.field_directory_book
+    - field.field.group.theories.field_hero_image
+    - field.field.group.theories.field_highlight_color
+    - field.field.group.theories.field_logo_image
+    - field.field.group.theories.field_short_description
+    - field.field.group.theories.field_status
+    - field.field.group.theories.field_weight
+    - group.type.theories
+  module:
+    - text
+id: group.theories.hero
+targetEntityType: group
+bundle: theories
+mode: hero
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: hero_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_short_description:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_announcement: true
+  field_body: true
+  field_directory_book: true
+  field_highlight_color: true
+  field_logo_image: true
+  field_status: true
+  field_weight: true
+  label: true
+  uid: true

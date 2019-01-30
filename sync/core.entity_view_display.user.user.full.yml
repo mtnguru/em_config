@@ -1,0 +1,157 @@
+uuid: eab33426-2960-4013-bbd8-031da6ee2cfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.field_address
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_descriptive_location
+    - field.field.user.user.field_display_full_user_name
+    - field.field.user.user.field_email_new_content
+    - field.field.user.user.field_email_updates
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_private_notes
+    - field.field.user.user.field_subscriptions
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_website
+    - image.style.medium
+  module:
+    - az_components
+    - image
+    - link
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content:
+  field_biography:
+    weight: 11
+    label: hidden
+    settings:
+      height: '80'
+      overlayHeight: '60'
+    third_party_settings: {  }
+    type: more_slider_formatter
+    region: content
+  field_descriptive_location:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_facebook:
+    weight: 8
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_first_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_linkedin:
+    weight: 6
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_twitter:
+    weight: 7
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_website:
+    weight: 5
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  masquerade:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  member_for:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_display_full_user_name: true
+  field_email_new_content: true
+  field_email_updates: true
+  field_phone: true
+  field_private_notes: true
+  field_subscriptions: true

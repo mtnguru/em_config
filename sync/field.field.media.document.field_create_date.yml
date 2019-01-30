@@ -1,0 +1,24 @@
+uuid: 50048b18-4444-4011-9905-840233201f0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_create_date
+    - media.type.document
+  module:
+    - datetime
+id: media.document.field_create_date
+field_name: field_create_date
+entity_type: media
+bundle: document
+label: 'Create date'
+description: 'Date this document was created.'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

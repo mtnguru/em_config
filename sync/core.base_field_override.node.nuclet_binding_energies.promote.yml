@@ -1,0 +1,22 @@
+uuid: 5e509a4d-bdae-4807-85c3-c02d08576922
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.promote
+field_name: promote
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

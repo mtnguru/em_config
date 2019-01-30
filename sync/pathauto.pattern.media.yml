@@ -1,0 +1,23 @@
+uuid: 277b7100-3c4f-4d1b-87c2-f1489763f2dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - media
+id: media
+label: Media
+type: 'canonical_entities:media'
+pattern: '/media/[current-user:account-name]/[current-date:custom:Y-m]/[media:name]'
+selection_criteria:
+  98e6abb2-5824-4993-8ae7-df28789ed7cd:
+    id: 'entity_bundle:media'
+    bundles:
+      image: image
+    negate: false
+    context_mapping:
+      media: media
+    uuid: 98e6abb2-5824-4993-8ae7-df28789ed7cd
+selection_logic: and
+weight: -6
+relationships: {  }

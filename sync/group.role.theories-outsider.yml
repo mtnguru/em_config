@@ -1,0 +1,28 @@
+uuid: fd222481-2446-4275-98c7-434cced1bfa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: true
+permissions:
+  - 'join group'
+  - 'view group'
+  - 'view group_node:article entity'
+  - 'view group_node:article content'
+  - 'view group_node:book entity'
+  - 'view group_node:book content'
+  - 'view group_node:event entity'
+  - 'view group_node:event content'
+  - 'view group_node:glossary entity'
+  - 'view group_node:glossary content'
+  - 'view group_node:news entity'
+  - 'view group_node:news content'
+  - 'view group_node:snippet entity'
+  - 'view group_node:snippet content'

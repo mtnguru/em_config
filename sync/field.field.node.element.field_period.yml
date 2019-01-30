@@ -1,0 +1,23 @@
+uuid: 2f6b7516-d128-411b-8b80-44b12cbdbe2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_period
+    - node.type.element
+id: node.element.field_period
+field_name: field_period
+entity_type: node
+bundle: element
+label: Period
+description: 'Periodic table row the element is in.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 7
+  prefix: ''
+  suffix: ''
+field_type: integer

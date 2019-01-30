@@ -1,0 +1,17 @@
+uuid: ed7bff72-a14c-470b-a527-b2846c263cfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Element
+type: element
+description: 'One of the Elements from the Periodic Table'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

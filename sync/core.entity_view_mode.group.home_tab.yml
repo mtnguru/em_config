@@ -1,0 +1,14 @@
+uuid: 3347f505-350f-4804-8f98-f56179f96f4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.home_tab
+label: 'Home tab'
+targetEntityType: group
+cache: true

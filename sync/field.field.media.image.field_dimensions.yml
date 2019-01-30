@@ -1,0 +1,19 @@
+uuid: a32980fa-e5cd-48bd-9836-7c96e40deff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_dimensions
+    - media.type.image
+id: media.image.field_dimensions
+field_name: field_dimensions
+entity_type: media
+bundle: image
+label: Dimensions
+description: 'The dimensions of the image.  For most images this information is automatically extracted and should be left empty.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

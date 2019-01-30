@@ -1,0 +1,14 @@
+uuid: 58730f30-ac47-48d4-842d-fba3ea1e9cd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.teaser
+label: Teaser
+targetEntityType: group
+cache: true

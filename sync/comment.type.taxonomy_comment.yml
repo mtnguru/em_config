@@ -1,0 +1,8 @@
+uuid: 21d27480-8405-4c3a-9802-57969fc17cba
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_comment
+label: 'Taxonomy Comment'
+target_entity_type_id: taxonomy_term
+description: 'Comments attached to Taxonomy terms.'

@@ -1,0 +1,25 @@
+uuid: de5aa938-1fe7-4f66-b206-0bf1ec3071ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_media
+    - node.type.book
+  module:
+    - social_media
+id: node.book.field_social_media
+field_name: field_social_media
+entity_type: node
+bundle: book
+label: 'Share this Page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

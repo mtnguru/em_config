@@ -1,0 +1,23 @@
+uuid: 5943a037-a7fc-41e6-8572-c9797f115d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_binding_energy_calculated
+    - node.type.atom
+id: node.atom.field_binding_energy_calculated
+field_name: field_binding_energy_calculated
+entity_type: node
+bundle: atom
+label: 'BE - Calculated'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,21 @@
+uuid: 98fe5526-aed5-4b1f-a561-845bafe3efb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contribute
+    - node.type.book
+  module:
+    - text
+id: node.book.field_contribute
+field_name: field_contribute
+entity_type: node
+bundle: book
+label: Contribute
+description: 'Use this block to list ways others can help.  Ask for photographs to be taken somewhere, ask for help analyzing samples, encourage readers to interview experts.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

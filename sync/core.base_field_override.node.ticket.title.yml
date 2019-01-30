@@ -1,0 +1,18 @@
+uuid: e278bf9e-2405-4b21-912f-acaec5f462d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ticket
+id: node.ticket.title
+field_name: title
+entity_type: node
+bundle: ticket
+label: 'Ticket name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

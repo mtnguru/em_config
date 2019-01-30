@@ -1,0 +1,185 @@
+uuid: 11a5ae67-f40b-4c5a-9e84-8b8277390b86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_attribution
+    - field.field.media.image.field_author
+    - field.field.media.image.field_create_date
+    - field.field.media.image.field_description
+    - field.field.media.image.field_dimensions
+    - field.field.media.image.field_geofield
+    - field.field.media.image.field_group
+    - field.field.media.image.field_location
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.field_usage
+    - field.field.media.image.image
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - content_moderation
+    - datetime
+    - field_group
+    - geofield_map
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_automatic_fields:
+      children:
+        - field_author
+        - field_create_date
+        - field_group
+        - field_dimensions
+        - field_usage
+        - field_location
+        - field_geofield
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: automatic-fields
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Automatic fields'
+_core:
+  default_config_hash: kyoAHlZTGIuGTaQuBblGBk8EhfnVKOl19_0j5WbpQqM
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_attribution:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_author:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_create_date:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_description:
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_dimensions:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_geofield:
+    weight: 33
+    settings:
+      map_library: gmap
+      map_type_google: terrain
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: '1'
+      map_dimensions:
+        width: 100%
+        height: 500px
+      zoom:
+        start: '6'
+        focus: '12'
+        min: '1'
+        max: '22'
+      click_to_find_marker: '1'
+      geoaddress_field:
+        field: field_location
+        disabled: '1'
+        hidden: 0
+      html5_geolocation: '1'
+      map_google_api_key: AIzaSyAB6XWO2xMV-TglVgvDc9vFJkt9Dg8Qp2k
+      click_to_place_marker: 0
+      zoom_level: 5
+      default_value:
+        lat: '0'
+        lon: '0'
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      hide_coordinates: false
+    third_party_settings: {  }
+    type: geofield_map
+    region: content
+  field_group:
+    weight: 29
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_location:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_usage:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  image:
+    type: image_image
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 6
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_in_library: true
+  path: true
+  uid: true

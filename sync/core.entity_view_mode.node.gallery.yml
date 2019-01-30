@@ -1,0 +1,14 @@
+uuid: e27c9dd1-5c09-4bba-9f8a-3ac46a838366
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.gallery
+label: Gallery
+targetEntityType: node
+cache: true

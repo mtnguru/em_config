@@ -1,0 +1,28 @@
+uuid: b2bccb26-ded5-4a72-b44c-41cfd27d9010
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_group
+    - group.type.theories
+    - media.type.instagram
+id: media.instagram.field_group
+field_name: field_group
+entity_type: media
+bundle: instagram
+label: Group
+description: 'Group this resource is associated with.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      theories: theories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

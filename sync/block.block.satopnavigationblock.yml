@@ -1,0 +1,20 @@
+uuid: 923c2520-cc7d-489e-9926-3530563e8df5
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_domain
+  theme:
+    - sa_neato
+id: satopnavigationblock
+theme: sa_neato
+region: header
+weight: 0
+provider: null
+plugin: sa_top_nav_block
+settings:
+  id: sa_top_nav_block
+  label: 'SA Top Navigation Block'
+  provider: az_domain
+  label_display: visible
+visibility: {  }

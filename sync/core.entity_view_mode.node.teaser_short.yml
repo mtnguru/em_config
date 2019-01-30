@@ -1,0 +1,14 @@
+uuid: fe4f9b82-dca0-4220-ac60-b1f3dd1f94e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.teaser_short
+label: 'Teaser - Short'
+targetEntityType: node
+cache: true

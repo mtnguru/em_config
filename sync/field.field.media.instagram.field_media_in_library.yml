@@ -1,0 +1,25 @@
+uuid: bce07262-4e7e-4bb1-9bdb-c9d63de4e781
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.instagram
+_core:
+  default_config_hash: JFA-021HimjorTYOjCqKaBQpkqFU4Ia732Def0onNLc
+id: media.instagram.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: instagram
+label: 'Show in media library'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Shown in media library'
+  off_label: 'Hidden in media library'
+field_type: boolean

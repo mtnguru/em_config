@@ -1,0 +1,28 @@
+uuid: 68b80f8e-43ba-44d4-aafe-e508a1f71dbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_author
+    - media.type.image
+id: media.image.field_author
+field_name: field_author
+entity_type: media
+bundle: image
+label: Photographer
+description: 'If you leave this field blank it will be automatically assigned to the logged in user - [current-user:account-name]'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

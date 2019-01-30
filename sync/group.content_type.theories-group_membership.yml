@@ -1,0 +1,17 @@
+uuid: d08c9fad-06ac-45ca-bfd6-54c103e8c9d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  module:
+    - user
+id: theories-group_membership
+label: 'Theories: Group membership'
+description: 'Adds users to groups as members.'
+group_type: theories
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

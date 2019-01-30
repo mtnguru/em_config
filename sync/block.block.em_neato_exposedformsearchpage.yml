@@ -1,0 +1,23 @@
+uuid: c72dfb02-b3f1-4fbe-86fb-83ff37219be6
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - em_neato
+id: em_neato_exposedformsearchpage
+theme: em_neato
+region: header
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page'
+settings:
+  id: 'views_exposed_filter_block:search-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

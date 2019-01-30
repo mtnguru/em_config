@@ -1,0 +1,29 @@
+uuid: 937fd6a6-8c9c-40a9-bbda-e57bdc3d54f8
+langcode: en
+status: false
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - sa_neato
+id: directorybook
+theme: sa_neato
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'entity_field:group:field_directory_book'
+settings:
+  id: 'entity_field:group:field_directory_book'
+  label: 'Directory book'
+  provider: ctools_block
+  label_display: visible
+  formatter:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@group.group_route_context:group'
+visibility: {  }

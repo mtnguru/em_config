@@ -1,0 +1,17 @@
+uuid: 8c50973b-2209-4c24-a59e-9aa1e0ed8b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+  enforced:
+    config:
+      - user.role.external
+id: theories-0e3d16643
+label: External
+weight: -3
+internal: true
+audience: outsider
+group_type: theories
+permissions_ui: false
+permissions: {  }

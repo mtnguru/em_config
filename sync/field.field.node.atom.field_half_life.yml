@@ -1,0 +1,19 @@
+uuid: b02f416e-a21c-4f7c-acc4-726d4681089c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_half_life
+    - node.type.atom
+id: node.atom.field_half_life
+field_name: field_half_life
+entity_type: node
+bundle: atom
+label: 'Half Life'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

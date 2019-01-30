@@ -1,0 +1,122 @@
+uuid: 8f05ee73-71e7-462f-bb3a-1b5a9ea624b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - Format
+        -
+          name: Font
+          items:
+            - Font
+            - FontSize
+            - TextColor
+            - BGColor
+        -
+          name: Indent
+          items:
+            - Outdent
+            - Indent
+        -
+          name: Align
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Links
+          items:
+            - Linkit
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Smiley
+            - media_browser
+            - CodeSnippet
+            - atomizer
+            - atom
+        -
+          name: Components
+          items:
+            - Blockquote
+            - Table
+            - SpecialChar
+            - HorizontalRule
+        -
+          name: Tools
+          items:
+            - Undo
+            - Redo
+            - Paste
+            - PasteFromWord
+            - Source
+            - Maximize
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    codesnippet:
+      highlight_style: arta
+      highlight_languages:
+        apache: apache
+        bash: bash
+        cs: cs
+        cpp: cpp
+        css: css
+        coffeescript: coffeescript
+        diff: diff
+        html: html
+        http: http
+        ini: ini
+        json: json
+        java: java
+        javascript: javascript
+        makefile: makefile
+        markdown: markdown
+        nginx: nginx
+        objectivec: objectivec
+        php: php
+        perl: perl
+        python: python
+        ruby: ruby
+        sql: sql
+        vbscript: vbscript
+        xhtml: xhtml
+        xml: xml
+    colorbutton:
+      colors: ''
+    linkit:
+      linkit_profile: linkit_profile
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

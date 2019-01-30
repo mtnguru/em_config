@@ -1,0 +1,24 @@
+uuid: bf27346a-1df7-4421-a8ec-fd73ef529e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atomizer
+  content:
+    - 'file:file:345d893c-926a-4ea2-8670-ab98c32681e1'
+  module:
+    - entity_embed
+    - node
+label: Atomizer
+id: atomizer
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles:
+    - atomizer
+  display_plugins:
+    - 'view_mode:node.atomizer'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon_uuid: 345d893c-926a-4ea2-8670-ab98c32681e1

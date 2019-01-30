@@ -1,0 +1,18 @@
+uuid: 2e587687-376c-4691-b5bf-2f98a6a75d9c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create ticket content'
+  - 'edit own ticket content'
+  - 'generate lorem ipsum'
+  - 'view media'

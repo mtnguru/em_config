@@ -1,0 +1,14 @@
+uuid: 35544a70-2f52-42d3-b9e4-4bbc7202e673
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.image_map
+label: 'Image Map'
+targetEntityType: node
+cache: true

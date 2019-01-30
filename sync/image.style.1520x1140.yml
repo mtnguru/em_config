@@ -1,0 +1,15 @@
+uuid: 7194b0ec-8217-4bc4-8164-f0e18574e61d
+langcode: en
+status: true
+dependencies: {  }
+name: 1520x1140
+label: 1520x1140
+effects:
+  da476d97-09ac-480a-8403-779a46b6d696:
+    uuid: da476d97-09ac-480a-8403-779a46b6d696
+    id: image_scale
+    weight: 1
+    data:
+      width: 1520
+      height: 1140
+      upscale: true

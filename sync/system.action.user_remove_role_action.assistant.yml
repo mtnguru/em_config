@@ -1,0 +1,14 @@
+uuid: c4d26c11-93c8-4544-a146-602f90c29813
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.assistant
+  module:
+    - user
+id: user_remove_role_action.assistant
+label: 'Remove the Assistant role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: assistant

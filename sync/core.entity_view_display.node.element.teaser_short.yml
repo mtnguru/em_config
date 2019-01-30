@@ -1,0 +1,35 @@
+uuid: e3c9b427-423b-4da4-a5ff-3e993253e76e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_short
+    - field.field.node.element.body
+    - field.field.node.element.field_atomic_number
+    - field.field.node.element.field_atomic_weight
+    - field.field.node.element.field_period
+    - field.field.node.element.field_pt
+    - field.field.node.element.field_symbol
+    - node.type.element
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.element.teaser_short
+targetEntityType: node
+bundle: element
+mode: teaser_short
+content: {  }
+hidden:
+  body: true
+  field_atomic_number: true
+  field_atomic_weight: true
+  field_period: true
+  field_pt: true
+  field_symbol: true
+  links: true

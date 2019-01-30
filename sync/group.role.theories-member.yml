@@ -1,0 +1,36 @@
+uuid: aa68bae9-6e8d-48c7-99d6-793ba46ae34d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: theories
+permissions_ui: true
+permissions:
+  - 'leave group'
+  - 'view group_membership content'
+  - 'view group_node:book entity'
+  - 'view group_node:book content'
+  - 'view group_node:news entity'
+  - 'view group_node:news content'
+  - 'create group_node:ticket entity'
+  - 'update own group_node:ticket entity'
+  - 'view group_node:ticket entity'
+  - 'create group_node:ticket content'
+  - 'update own group_node:ticket content'
+  - 'view group_node:ticket content'
+  - 'view group_node:article entity'
+  - 'view group_node:article content'
+  - 'view group_node:event content'
+  - 'view group_node:snippet entity'
+  - 'view group_node:snippet content'
+  - 'view group'
+  - 'view group_node:event entity'
+  - 'view group_node:glossary entity'
+  - 'view group_node:glossary content'
+  - 'create group_node:article entity'

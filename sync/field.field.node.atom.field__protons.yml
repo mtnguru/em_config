@@ -1,0 +1,23 @@
+uuid: 97e3bd39-19eb-4236-be0b-9c725832f64c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__protons
+    - node.type.atom
+id: node.atom.field__protons
+field_name: field__protons
+entity_type: node
+bundle: atom
+label: '# Protons'
+description: 'Number of Protons in the nucleus.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 400
+  prefix: ''
+  suffix: ''
+field_type: integer

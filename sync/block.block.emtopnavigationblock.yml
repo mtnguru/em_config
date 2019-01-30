@@ -1,0 +1,20 @@
+uuid: 9a945b5b-cb02-42b9-a286-eb3af8868ae2
+langcode: en
+status: true
+dependencies:
+  module:
+    - az_domain
+  theme:
+    - em_neato
+id: emtopnavigationblock
+theme: em_neato
+region: header
+weight: 0
+provider: null
+plugin: em_top_nav_block
+settings:
+  id: em_top_nav_block
+  label: 'EM Top Navigation Block'
+  provider: az_domain
+  label_display: visible
+visibility: {  }

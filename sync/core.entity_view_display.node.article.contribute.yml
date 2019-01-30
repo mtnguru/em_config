@@ -1,0 +1,47 @@
+uuid: fca14ff2-9a88-410f-b349-790b3172cb5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.contribute
+    - field.field.node.article.body
+    - field.field.node.article.field_comments
+    - field.field.node.article.field_contribute
+    - field.field.node.article.field_media
+    - field.field.node.article.field_show_author
+    - field.field.node.article.field_social_media
+    - field.field.node.article.field_topics
+    - node.type.article
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.article.contribute
+targetEntityType: node
+bundle: article
+mode: contribute
+content:
+  field_contribute:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_comments: true
+  field_display_image_map: true
+  field_media: true
+  field_show_author: true
+  field_social_media: true
+  field_topics: true
+  links: true
+  workbench_moderation_control: true

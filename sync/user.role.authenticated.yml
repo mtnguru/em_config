@@ -1,0 +1,29 @@
+uuid: cc17c9b1-f3df-49c9-ab12-c1f95674b913
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access printer-friendly version'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'atomizer atoms members'
+  - 'atomizer display atom viewer'
+  - 'change own username'
+  - 'create ticket content'
+  - 'edit own comments'
+  - 'edit own ticket content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format mailchimp_campaign'
+  - 'view media'
+  - 'view post access counter'

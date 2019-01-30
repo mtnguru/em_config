@@ -1,0 +1,49 @@
+uuid: d8b1cabf-0075-49ef-89af-b7e56b605c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.atomizer_minimal
+    - field.field.node.atom.body
+    - field.field.node.atom.field__inner_electrons
+    - field.field.node.atom.field__outer_electrons
+    - field.field.node.atom.field__protons
+    - field.field.node.atom.field_atomic_structure
+    - field.field.node.atom.field_element
+    - field.field.node.atom.field_isotope
+    - field.field.node.atom.field_stability
+    - node.type.atom
+  module:
+    - atomizer
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.atom.atomizer_minimal
+targetEntityType: node
+bundle: atom
+mode: atomizer_minimal
+content:
+  field_atomic_structure:
+    weight: 0
+    label: hidden
+    settings:
+      atomizer: atomizer_atom_basic.yml
+      control: controls_atom_minimal.yml
+      atomizerClass: ''
+    third_party_settings: {  }
+    type: atomizer_formatter
+    region: content
+hidden:
+  body: true
+  field__inner_electrons: true
+  field__outer_electrons: true
+  field__protons: true
+  field_element: true
+  field_isotope: true
+  field_stability: true
+  links: true

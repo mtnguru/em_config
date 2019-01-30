@@ -1,0 +1,93 @@
+uuid: 31a71b34-a3d9-4007-8669-fa5f4180f73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_address
+    - field.field.user.user.field_biography
+    - field.field.user.user.field_descriptive_location
+    - field.field.user.user.field_display_full_user_name
+    - field.field.user.user.field_email_new_content
+    - field.field.user.user.field_email_updates
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_picture
+    - field.field.user.user.field_private_notes
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_website
+    - image.style.50x50
+  module:
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_descriptive_location:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_first_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 50x50
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_address: true
+  field_biography: true
+  field_display_full_user_name: true
+  field_email_new_content: true
+  field_email_updates: true
+  field_facebook: true
+  field_linkedin: true
+  field_phone: true
+  field_private_notes: true
+  field_twitter: true
+  field_website: true
+  masquerade: true
+  member_for: true

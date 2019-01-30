@@ -1,0 +1,45 @@
+uuid: 521dad9a-9139-4873-a495-9f0b9007c6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_subscriptions
+  module:
+    - mailchimp_lists
+    - user
+id: user.user.field_subscriptions
+field_name: field_subscriptions
+entity_type: user
+bundle: user
+label: 'Email Subscriptions'
+description: 'Mail Chimp email list subscriptions'
+required: false
+translatable: false
+default_value:
+  -
+    value:
+      subscribe: 0
+      interest_groups:
+        3c65e8c60f:
+          2c104b8ef0: 2c104b8ef0
+          bd70f94c69: 0
+          c69d44b5fd: 0
+          ea2117f78c: 0
+          6061cc3d6a: 0
+          bac0d9c2e0: 0
+    subscribe: null
+    interest_groups: null
+default_value_callback: ''
+settings:
+  subscribe_checkbox_label: Subscribe
+  show_interest_groups: 1
+  hide_subscribe_checkbox: 1
+  interest_groups_hidden: 0
+  interest_groups_label: 'Email List Subscriptions'
+  merge_fields:
+    EMAIL: mail
+    BIRTHDAY: ''
+    FNAME: field_first_name
+    LNAME: field_last_name
+  unsubscribe_on_delete: 1
+field_type: mailchimp_lists_subscription

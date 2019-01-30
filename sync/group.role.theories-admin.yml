@@ -1,0 +1,60 @@
+uuid: e8636449-5c60-423a-a62f-f468370d8c24
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+id: theories-admin
+label: Admin
+weight: 100
+internal: false
+audience: member
+group_type: theories
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'administer group'
+  - 'delete group'
+  - 'edit group'
+  - 'administer members'
+  - 'update own group_membership content'
+  - 'access group_node overview'
+  - 'view group_node:ticket content'
+  - 'create group_node:email entity'
+  - 'delete any group_node:email entity'
+  - 'delete own group_node:email entity'
+  - 'update any group_node:email entity'
+  - 'update own group_node:email entity'
+  - 'view group_node:email entity'
+  - 'view unpublished group_node:email entity'
+  - 'create group_node:email content'
+  - 'delete any group_node:email content'
+  - 'delete own group_node:email content'
+  - 'update any group_node:email content'
+  - 'update own group_node:email content'
+  - 'view group_node:email content'
+  - 'create group_node:snippet entity'
+  - 'delete any group_node:snippet entity'
+  - 'delete own group_node:snippet entity'
+  - 'update any group_node:snippet entity'
+  - 'update own group_node:snippet entity'
+  - 'view unpublished group_node:snippet entity'
+  - 'create group_node:snippet content'
+  - 'delete any group_node:snippet content'
+  - 'delete own group_node:snippet content'
+  - 'update any group_node:snippet content'
+  - 'update own group_node:snippet content'
+  - 'delete any group_node:ticket entity'
+  - 'delete own group_node:ticket entity'
+  - 'delete any group_node:ticket content'
+  - 'delete own group_node:ticket content'
+  - 'create group_node:event entity'
+  - 'delete any group_node:event entity'
+  - 'update any group_node:event entity'
+  - 'update own group_node:event entity'
+  - 'view unpublished group_node:event entity'
+  - 'create group_node:event content'
+  - 'delete any group_node:event content'
+  - 'delete own group_node:event content'
+  - 'update any group_node:event content'
+  - 'update own group_node:event content'

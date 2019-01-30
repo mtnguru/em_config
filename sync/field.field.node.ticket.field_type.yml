@@ -1,0 +1,29 @@
+uuid: 3970fb27-1ffc-47c1-97a1-9a26b1feae67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.ticket
+    - taxonomy.vocabulary.ticket_type
+id: node.ticket.field_type
+field_name: field_type
+entity_type: node
+bundle: ticket
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ticket_type: ticket_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ticket_type
+field_type: entity_reference

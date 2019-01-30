@@ -1,0 +1,19 @@
+uuid: 244a399f-a0ee-4c0e-9b9c-0cb57b569d2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_structure
+    - node.type.birkeland
+id: node.birkeland.field_structure
+field_name: field_structure
+entity_type: node
+bundle: birkeland
+label: Structure
+description: 'This field contains the YAML array that defines the structure of a birkeland current.  It is used by the atomizer to project a 3D model of the current.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,23 @@
+uuid: c318bd58-2aa7-4dab-8287-6002a646cc47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra_neutron
+    - node.type.nuclet_binding_energies
+id: node.nuclet_binding_energies.field_extra_neutron
+field_name: field_extra_neutron
+entity_type: node
+bundle: nuclet_binding_energies
+label: 'Extra Neutron'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

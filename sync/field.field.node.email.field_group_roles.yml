@@ -1,0 +1,23 @@
+uuid: d30108e1-9f98-48ee-98c8-d32e25281a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_roles
+    - node.type.email
+id: node.email.field_group_roles
+field_name: field_group_roles
+entity_type: node
+bundle: email
+label: 'Group roles'
+description: 'Limit email to group members with these roles.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group_role'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

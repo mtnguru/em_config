@@ -1,0 +1,23 @@
+uuid: 2c965526-ac0c-4cf6-b937-8d9d54073f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_email
+    - node.type.email
+id: node.email.field_send_email
+field_name: field_send_email
+entity_type: node
+bundle: email
+label: 'Send Email on Save'
+description: 'When this email is saved, send it to users that match the criteria.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

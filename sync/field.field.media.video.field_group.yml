@@ -1,0 +1,28 @@
+uuid: db03a51e-3713-40a2-8abf-12b819f816af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_group
+    - group.type.theories
+    - media.type.video
+id: media.video.field_group
+field_name: field_group
+entity_type: media
+bundle: video
+label: Group
+description: 'Group this resource is associated with.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      theories: theories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

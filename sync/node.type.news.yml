@@ -1,0 +1,17 @@
+uuid: 9099d97e-cf60-4230-a1db-d4484b305351
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'Short summaries and links to news articles found on other sites.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

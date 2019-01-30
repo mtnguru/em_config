@@ -1,0 +1,21 @@
+uuid: f4ac79e1-669f-4859-854a-9e40c2b5bd60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_create_date
+    - media.type.video
+  module:
+    - datetime
+id: media.video.field_create_date
+field_name: field_create_date
+entity_type: media
+bundle: video
+label: 'Create date'
+description: 'If left blank the program will automatically use the current date - [current-date:html_date]'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

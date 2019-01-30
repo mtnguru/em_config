@@ -1,0 +1,14 @@
+uuid: 037dae71-ec82-48f8-ad56-ccf29f5623ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'Display the image using the Imager field formatter.'
+id: media.imager
+label: Imager
+targetEntityType: media
+cache: true

@@ -1,0 +1,22 @@
+uuid: da04510b-11f0-4ce6-8a06-16e267f86f87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_biography
+  module:
+    - text
+    - user
+id: user.user.field_biography
+field_name: field_biography
+entity_type: user
+bundle: user
+label: Biography
+description: 'Enter something about yourself.  Why do study Science, where did you go to school, how do you make money?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,19 @@
+uuid: fad127a4-39ae-4398-8983-a041fc0c98d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.theories
+    - node.type.email
+  module:
+    - gnode
+    - node
+id: theories-group_node-email
+label: 'Theories: Group node (Email)'
+description: 'Adds <em class="placeholder">Email</em> content to groups both publicly and privately.'
+group_type: theories
+content_plugin: 'group_node:email'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

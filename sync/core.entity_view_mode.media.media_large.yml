@@ -1,0 +1,14 @@
+uuid: 3f6b833d-ba5d-4147-9784-ad27cdb94650
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.media_large
+label: 'Media - Large'
+targetEntityType: media
+cache: true

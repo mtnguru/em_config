@@ -1,0 +1,18 @@
+uuid: d0446232-6057-447a-9580-3dfec14e1d57
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_atomic_weight
+field_name: field_atomic_weight
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: fddfa47f-6b13-445b-8f58-6004bba2ccdd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:b6b036b8-e363-4606-91da-d8fff1afc31b'
+id: text
+label: Text
+icon_uuid: b6b036b8-e363-4606-91da-d8fff1afc31b
+description: 'A section with one or more paragraphs - full html'
+behavior_plugins: {  }

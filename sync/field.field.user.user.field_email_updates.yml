@@ -1,0 +1,24 @@
+uuid: 33968c78-f9d7-4b61-a8b9-ccf5cde0379a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_email_updates
+  module:
+    - user
+id: user.user.field_email_updates
+field_name: field_email_updates
+entity_type: user
+bundle: user
+label: 'Receive periodic site update emails'
+description: 'Do you want to receive periodic (~weekly)  emails regarding the status of and updates to this website?  '
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,9 @@
+uuid: ee523b60-a98c-418a-9ab5-c9aabb2c7aaa
+langcode: en
+status: true
+dependencies: {  }
+id: structuredatom_org
+domain_id: structuredatom_com
+pattern: structuredatom.com
+redirect: 0
+environment: default

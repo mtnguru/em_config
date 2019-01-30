@@ -1,0 +1,14 @@
+uuid: 07834281-4b82-4214-abe6-564866706db6
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: group.block
+label: Block
+targetEntityType: group
+cache: true

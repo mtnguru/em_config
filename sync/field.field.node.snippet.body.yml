@@ -1,0 +1,22 @@
+uuid: 042e1348-bfbc-49d8-ac48-a2190855d26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.snippet
+  module:
+    - text
+id: node.snippet.body
+field_name: body
+entity_type: node
+bundle: snippet
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

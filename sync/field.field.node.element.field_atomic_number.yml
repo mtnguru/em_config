@@ -1,0 +1,23 @@
+uuid: c0cbdeb3-2041-41a3-be8e-5cd223794789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_atomic_number
+    - node.type.element
+id: node.element.field_atomic_number
+field_name: field_atomic_number
+entity_type: node
+bundle: element
+label: 'Atomic Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 125
+  prefix: ''
+  suffix: ''
+field_type: integer

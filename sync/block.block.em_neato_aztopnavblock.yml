@@ -1,0 +1,20 @@
+uuid: acbc1db0-f24d-4d17-9eb7-ce043a79a0b3
+langcode: en
+status: false
+dependencies:
+  module:
+    - az_content
+  theme:
+    - em_neato
+id: em_neato_aztopnavblock
+theme: em_neato
+region: header
+weight: 0
+provider: null
+plugin: az_top_nav_block
+settings:
+  id: az_top_nav_block
+  label: 'AZ Top Nav Block'
+  provider: az_groups
+  label_display: '0'
+visibility: {  }

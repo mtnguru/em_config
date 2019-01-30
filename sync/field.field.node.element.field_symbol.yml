@@ -1,0 +1,19 @@
+uuid: 29f8d8cc-e4f1-430d-aac1-ab56c9315bdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_symbol
+    - node.type.element
+id: node.element.field_symbol
+field_name: field_symbol
+entity_type: node
+bundle: element
+label: Symbol
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 498e17bc-4e05-470d-984e-d384f41ab39e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.atomizer
+label: Atomizer
+targetEntityType: node
+cache: true

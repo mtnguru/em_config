@@ -1,0 +1,33 @@
+uuid: 3b126cf6-0d8a-469f-ba7a-46babeb10492
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_priority
+    - node.type.ticket
+    - taxonomy.vocabulary.ticket_priority
+  content:
+    - 'taxonomy_term:ticket_priority:25870cc8-2a91-4638-b665-1aeedba15514'
+id: node.ticket.field_priority
+field_name: field_priority
+entity_type: node
+bundle: ticket
+label: Priority
+description: 'How severe is this ticket?'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 25870cc8-2a91-4638-b665-1aeedba15514
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ticket_priority: ticket_priority
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

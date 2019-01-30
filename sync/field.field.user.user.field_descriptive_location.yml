@@ -1,0 +1,20 @@
+uuid: 06a4b247-a3bd-4b75-baca-fe7d59d55ede
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_descriptive_location
+  module:
+    - user
+id: user.user.field_descriptive_location
+field_name: field_descriptive_location
+entity_type: user
+bundle: user
+label: 'Descriptive location'
+description: 'Give us an idea where you live.  Be creative!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

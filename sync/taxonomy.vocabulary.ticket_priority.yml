@@ -1,0 +1,9 @@
+uuid: 98558467-c8e5-44e9-b4a4-3d79465c4083
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ticket Priority'
+vid: ticket_priority
+description: 'Is this critical, major, minor'
+hierarchy: 0
+weight: 0

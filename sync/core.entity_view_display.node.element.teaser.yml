@@ -1,0 +1,62 @@
+uuid: 81b94b27-ad2c-4611-b08e-7511106e2b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.element.body
+    - field.field.node.element.field_atomic_number
+    - field.field.node.element.field_atomic_weight
+    - field.field.node.element.field_period
+    - field.field.node.element.field_pt
+    - field.field.node.element.field_symbol
+    - node.type.element
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.element.teaser
+targetEntityType: node
+bundle: element
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 320
+    third_party_settings: {  }
+    region: content
+  field_atomic_number:
+    type: number_integer
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_symbol:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_atomic_weight: true
+  field_period: true
+  field_pt: true

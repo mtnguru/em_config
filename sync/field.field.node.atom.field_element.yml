@@ -1,0 +1,28 @@
+uuid: 1973141a-35aa-483f-84ee-6fcc0b6f3df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_element
+    - node.type.atom
+    - node.type.element
+id: node.atom.field_element
+field_name: field_element
+entity_type: node
+bundle: atom
+label: Element
+description: 'The element this nucleus is an example of.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      element: element
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

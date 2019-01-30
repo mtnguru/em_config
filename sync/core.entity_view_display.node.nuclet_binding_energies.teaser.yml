@@ -1,0 +1,48 @@
+uuid: 89d579dc-b144-4220-9a04-56e503171faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nuclet_binding_energies.body
+    - node.type.nuclet_binding_energies
+  module:
+    - text
+    - user
+id: node.nuclet_binding_energies.teaser
+targetEntityType: node
+bundle: nuclet_binding_energies
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_beryllium_9: true
+  field_beryllium_on_carbon: true
+  field_boron_10: true
+  field_boron_11: true
+  field_boron_on_carbon: true
+  field_carbon_12: true
+  field_carbon_on_carbon: true
+  field_deuterium: true
+  field_deuterium_on_carbon: true
+  field_extra_neutron: true
+  field_extra_neutron_on_carbon: true
+  field_helium_3: true
+  field_helium_4: true
+  field_lithium_6: true
+  field_lithium_7: true
+  field_lithium_on_carbon: true
+  field_neutral_ending_4: true
+  field_neutral_ending_5: true
